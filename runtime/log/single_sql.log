@@ -1592,3 +1592,1591 @@
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000491s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000702s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[2019-08-20T10:42:13+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000934s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[2019-08-20T10:42:14+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000603s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001202s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000561s ]
+---------------------------------------------------------------
+[2019-08-20T10:42:21+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001693s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000237s ]
+---------------------------------------------------------------
+[2019-08-20T10:42:26+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000877s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.003443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001333s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000237s ]
+---------------------------------------------------------------
+[2019-08-20T10:43:57+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000624s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000474s ]
+---------------------------------------------------------------
+[2019-08-20T10:43:58+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000617s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000235s ]
+---------------------------------------------------------------
+[2019-08-20T10:56:11+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001790s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001767s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.001958s ]
+---------------------------------------------------------------
+[2019-08-20T10:56:55+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/index/index.html?spm=m-37-40-39
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000588s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_service_config` [ RunTime:0.004438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_service_config` WHERE  `is_deleted` = 0 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_service_config` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000570s ]
+---------------------------------------------------------------
+[2019-08-20T10:56:56+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/index/index.html?spm=m-37-40-39
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000637s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_service_config` [ RunTime:0.001866s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_service_config` WHERE  `is_deleted` = 0 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_service_config` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000628s ]
+---------------------------------------------------------------
+[2019-08-20T10:57:08+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000270s ]
+---------------------------------------------------------------
+[2019-08-20T10:57:25+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000766s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001492s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.003073s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000375s ]
+---------------------------------------------------------------
+[2019-08-20T12:00:25+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000626s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.002237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[2019-08-20T12:00:26+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001347s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000697s ]
+---------------------------------------------------------------
+[2019-08-20T12:00:38+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000614s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001381s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000252s ]
+---------------------------------------------------------------
+[2019-08-20T12:00:49+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/news/index.html?spm=m-16-20-21
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001348s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.002278s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_news` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000741s ]
+---------------------------------------------------------------
+[2019-08-20T12:00:50+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003393s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.001259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.004615s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000694s ]
+---------------------------------------------------------------
+[2019-08-20T12:00:51+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/index.html?spm=m-16-20-23
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000659s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default') [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default') ORDER BY `sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.000533s ]
+---------------------------------------------------------------
+[2019-08-20T12:00:52+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000603s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.001672s ]
+---------------------------------------------------------------
+[2019-08-20T12:04:21+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000694s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000449s ]
+---------------------------------------------------------------
+[2019-08-20T12:04:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000704s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[2019-08-20T12:04:30+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000686s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001217s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000436s ]
+---------------------------------------------------------------
+[2019-08-20T12:05:45+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000666s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.002417s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.003148s ]
+---------------------------------------------------------------
+[2019-08-20T12:05:47+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000597s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000235s ]
+---------------------------------------------------------------
+[2019-08-20T14:11:31+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000946s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001483s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.001310s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000415s ]
+---------------------------------------------------------------
+[2019-08-20T14:11:32+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000885s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000632s ]
+---------------------------------------------------------------
+[2019-08-20T14:17:33+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000726s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.004599s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001902s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001106s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001949s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000474s ]
+---------------------------------------------------------------
+[2019-08-20T14:17:42+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/config/options.html?spm=m-16-17-18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001372s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000709s ]
+---------------------------------------------------------------
+[2019-08-20T14:17:44+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001665s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[2019-08-20T14:17:51+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000239s ]
+---------------------------------------------------------------
+[2019-08-20T14:17:54+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001703s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[2019-08-20T14:18:04+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001101s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001085s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000269s ]
+---------------------------------------------------------------
+[2019-08-20T14:33:42+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/config/options.html?spm=m-16-17-18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000783s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.001794s ]
+---------------------------------------------------------------
+[2019-08-20T14:33:49+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/news/index.html?spm=m-16-20-21
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000698s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_news` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000359s ]
+---------------------------------------------------------------
+[2019-08-20T14:33:50+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000771s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.004884s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000339s ]
+---------------------------------------------------------------
+[2019-08-20T14:33:51+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/index.html?spm=m-16-20-23
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000962s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default') [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default') ORDER BY `sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.000544s ]
+---------------------------------------------------------------
+[2019-08-20T14:33:52+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/subscribe.html?spm=m-16-20-24
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001079s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` = 'subscribe' LIMIT 1 [ RunTime:0.000706s ]
+---------------------------------------------------------------
+[2019-08-20T14:33:53+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/defaults.html?spm=m-16-20-25
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003167s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001227s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` = 'default' LIMIT 1 [ RunTime:0.001347s ]
+---------------------------------------------------------------
+[2019-08-20T14:33:54+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/menu/index.html?spm=m-16-20-26&output=json
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000892s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.002106s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default')  AND `status` = 1 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_data` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT `value` FROM `system_data` WHERE  `name` = 'menudata' LIMIT 1 [ RunTime:0.001462s ]
+---------------------------------------------------------------
+[2019-08-20T14:33:59+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/defaults.html?spm=m-16-20-25
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001977s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001578s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` = 'default' LIMIT 1 [ RunTime:0.001857s ]
+---------------------------------------------------------------
+[2019-08-20T14:34:00+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000632s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[2019-08-20T14:40:42+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000796s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[2019-08-20T14:40:43+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000958s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.001244s ]
+---------------------------------------------------------------
+[2019-08-20T14:40:50+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001840s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000240s ]
+---------------------------------------------------------------
+[2019-08-20T14:41:18+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000625s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001237s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001319s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000371s ]
+---------------------------------------------------------------
+[2019-08-20T14:41:23+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000643s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[2019-08-20T14:41:33+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000574s ]
+---------------------------------------------------------------
+[2019-08-20T14:42:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000797s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000587s ]
+---------------------------------------------------------------
+[2019-08-20T14:42:36+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001084s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001239s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000503s ]
+---------------------------------------------------------------
+[2019-08-20T14:42:40+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000940s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001116s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000357s ]
+---------------------------------------------------------------
+[2019-08-20T14:42:42+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000606s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000268s ]
+---------------------------------------------------------------
+[2019-08-20T14:42:44+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000566s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.004191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[2019-08-20T14:45:11+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[2019-08-20T14:45:15+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000823s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001212s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001911s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001628s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000425s ]
+---------------------------------------------------------------
+[2019-08-20T14:45:46+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000711s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001442s ]
+---------------------------------------------------------------
+[2019-08-20T14:45:47+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000949s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001164s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.002327s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[2019-08-20T14:46:29+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000620s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000698s ]
+---------------------------------------------------------------
+[2019-08-20T14:46:29+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001161s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001907s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.004097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.002330s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.002160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001631s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000822s ]
+---------------------------------------------------------------
+[2019-08-20T14:48:17+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/config/info.html?spm=m-2-4-11
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[2019-08-20T14:48:18+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000700s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001441s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000418s ]
+---------------------------------------------------------------
+[2019-08-20T14:48:19+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001036s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001302s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000242s ]
+---------------------------------------------------------------
+[2019-08-20T14:48:22+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000626s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.002823s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000233s ]
+---------------------------------------------------------------
+[2019-08-20T14:50:17+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000372s ]
+---------------------------------------------------------------
+[2019-08-20T14:50:18+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001253s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001648s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001230s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000468s ]
+---------------------------------------------------------------
+[2019-08-20T14:50:29+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000743s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001002s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000251s ]
+---------------------------------------------------------------
+[2019-08-20T14:51:40+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000634s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000503s ]
+---------------------------------------------------------------
+[2019-08-20T14:51:41+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000815s ]
+---------------------------------------------------------------
+[2019-08-20T14:51:51+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000609s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000988s ]
+---------------------------------------------------------------
+[2019-08-20T14:51:52+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002079s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.007562s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.003401s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.002312s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.002597s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.001602s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.002127s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.002176s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.003363s ]
+---------------------------------------------------------------
+[2019-08-20T14:52:07+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000750s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000613s ]
+---------------------------------------------------------------
+[2019-08-20T14:52:08+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001643s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001493s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000485s ]
+---------------------------------------------------------------
+[2019-08-20T14:52:17+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001028s ]
+---------------------------------------------------------------
+[2019-08-20T14:52:17+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001092s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001131s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000410s ]
+---------------------------------------------------------------
+[2019-08-20T14:52:38+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000768s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[2019-08-20T14:52:38+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000955s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.021982s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.005295s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001879s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001407s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.001729s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.001573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.003784s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.001465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001802s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.001604s ]
+---------------------------------------------------------------
+[2019-08-20T14:53:11+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[2019-08-20T14:53:12+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.002547s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000374s ]
+---------------------------------------------------------------
+[2019-08-20T14:53:49+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000627s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000794s ]
+---------------------------------------------------------------
+[2019-08-20T14:53:50+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000882s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001336s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001195s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000427s ]
+---------------------------------------------------------------
+[2019-08-20T14:54:16+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[2019-08-20T14:54:17+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001002s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001331s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001224s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.003817s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.001004s ]
+---------------------------------------------------------------
+[2019-08-20T14:54:27+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000653s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000911s ]
+---------------------------------------------------------------
+[2019-08-20T14:54:28+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001243s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001895s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001141s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000272s ]
+---------------------------------------------------------------
+[2019-08-20T14:55:17+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000609s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000441s ]
+---------------------------------------------------------------
+[2019-08-20T14:55:18+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000755s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001299s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001204s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000402s ]
+---------------------------------------------------------------
+[2019-08-20T14:55:30+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[2019-08-20T14:55:30+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001020s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.001747s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[2019-08-20T14:55:59+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000576s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000636s ]
+---------------------------------------------------------------
+[2019-08-20T14:56:00+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000699s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001098s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000557s ]
+---------------------------------------------------------------
+[2019-08-20T14:56:26+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/config/options.html?spm=m-16-17-18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000737s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001487s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000841s ]
+---------------------------------------------------------------
+[2019-08-20T14:56:37+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000236s ]
+---------------------------------------------------------------
+[2019-08-20T15:36:22+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000734s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000375s ]
+---------------------------------------------------------------
+[2019-08-20T15:36:23+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000727s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001103s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000936s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001860s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.001270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.001136s ]
+---------------------------------------------------------------
+[2019-08-20T15:36:44+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.002534s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[2019-08-20T15:36:45+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/index.html?spm=m-16-20-23
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000680s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default') [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default') ORDER BY `sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.000653s ]
+---------------------------------------------------------------
+[2019-08-20T15:36:46+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/subscribe.html?spm=m-16-20-24
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` = 'subscribe' LIMIT 1 [ RunTime:0.000568s ]
+---------------------------------------------------------------
+[2019-08-20T15:36:48+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/defaults.html?spm=m-16-20-25
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` = 'default' LIMIT 1 [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[2019-08-20T15:36:49+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/menu/index.html?spm=m-16-20-26&output=json
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001003s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001386s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default')  AND `status` = 1 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_data` [ RunTime:0.002164s ]
+[ sql ] [ SQL ] SELECT `value` FROM `system_data` WHERE  `name` = 'menudata' LIMIT 1 [ RunTime:0.000670s ]
+---------------------------------------------------------------
+[2019-08-20T15:36:52+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/news/index.html?spm=m-16-20-21
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_news` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000683s ]
+---------------------------------------------------------------
+[2019-08-20T15:37:07+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001333s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001292s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000300s ]
+---------------------------------------------------------------
+[2019-08-20T15:37:41+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000634s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[2019-08-20T15:37:41+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000709s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001430s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001599s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[2019-08-20T15:38:06+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/index/index.html?spm=m-37-40-39
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_service_config` [ RunTime:0.004248s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_service_config` WHERE  `is_deleted` = 0 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_service_config` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000741s ]
+---------------------------------------------------------------
+[2019-08-20T15:38:11+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000566s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000240s ]
+---------------------------------------------------------------
+[2019-08-20T15:38:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/news/index.html?spm=m-16-20-21
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002799s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.005367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_news` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000479s ]
+---------------------------------------------------------------
+[2019-08-20T15:38:25+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000630s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[2019-08-20T15:38:32+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/sync.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000598s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.003822s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`node` , `action` , `content` , `geoip` , `username`) VALUES ('wechat/fans/sync' , '微信管理' , '创建微信粉丝同步任务' , '127.0.0.1' , 'admin') [ RunTime:0.001582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_jobs_log` [ RunTime:0.001103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `system_jobs_log` WHERE  `title` = '同步粉丝列表'  AND `status` IN (1,2) [ RunTime:0.001279s ]
+[ sql ] [ SQL ] INSERT INTO `system_jobs_log` (`title` , `later` , `uri` , `double` , `data` , `desc` , `status_at`) VALUES ('同步粉丝列表' , 0 , 'app\\wechat\\queue\\WechatQueue' , 0 , '[]' , '' , '2019-08-20 15:38:32') [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_jobs` [ RunTime:0.000853s ]
+[ sql ] [ SQL ] INSERT INTO `system_jobs` (`queue` , `payload` , `attempts` , `reserved` , `reserved_at` , `available_at` , `created_at`) VALUES ('default' , '{\"job\":\"app\\\\wechat\\\\queue\\\\WechatQueue\",\"data\":{\"_job_id_\":\"1\",\"_job_title_\":\"\\u540c\\u6b65\\u7c89\\u4e1d\\u5217\\u8868\"}}' , 0 , 0 , NULL , 1566286712 , 1566286712) [ RunTime:0.000669s ]
+---------------------------------------------------------------
+[2019-08-20T15:38:34+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.001429s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.001818s ]
+---------------------------------------------------------------
+[2019-08-20T15:39:18+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/news/index.html?spm=m-16-20-21
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002753s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.003026s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.001818s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_news` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.005130s ]
+---------------------------------------------------------------
+[2019-08-20T15:39:19+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001494s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001097s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[2019-08-20T15:39:31+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000651s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001341s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000668s ]
+---------------------------------------------------------------
+[2019-08-20T15:39:32+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000932s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.001224s ]
+---------------------------------------------------------------
+[2019-08-20T15:40:08+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000650s ]
+---------------------------------------------------------------
+[2019-08-20T15:40:09+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000741s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001247s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[2019-08-20T15:40:14+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/index.html?spm=m-16-20-23
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default') [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default') ORDER BY `sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.001744s ]
+---------------------------------------------------------------
+[2019-08-20T15:40:15+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000928s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.002643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000551s ]
+---------------------------------------------------------------
+[2019-08-20T15:40:29+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000797s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000366s ]
+---------------------------------------------------------------
+[2019-08-20T15:40:29+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000616s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001140s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000359s ]
+---------------------------------------------------------------
+[2019-08-20T15:40:40+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000647s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000696s ]
+---------------------------------------------------------------
+[2019-08-20T15:40:40+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000952s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.002352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.002116s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.001804s ]
+---------------------------------------------------------------
+[2019-08-20T15:41:51+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000584s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[2019-08-20T15:41:52+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001031s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.003740s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.001330s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.001827s ]
+---------------------------------------------------------------
+[2019-08-20T15:42:06+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22&project_name=&project_id=&status=&create_at=
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000644s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[2019-08-20T15:43:35+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/news/index.html?spm=m-16-20-21
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001093s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001748s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_news` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.001519s ]
+---------------------------------------------------------------
+[2019-08-20T15:43:36+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000653s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[2019-08-20T15:43:38+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/index.html?spm=m-16-20-23
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000607s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default') [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` NOT IN ('subscribe','default') ORDER BY `sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.000545s ]
+---------------------------------------------------------------
+[2019-08-20T15:43:41+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/keys/subscribe.html?spm=m-16-20-24
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000606s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_keys` WHERE  `keys` = 'subscribe' LIMIT 1 [ RunTime:0.000542s ]
+---------------------------------------------------------------
+[2019-08-20T15:43:43+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000653s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[2019-08-20T15:43:49+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/news/index.html?spm=m-16-20-21
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_news` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[2019-08-20T15:43:50+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.001665s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000486s ]
+---------------------------------------------------------------
+[2019-08-20T15:44:26+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000894s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000852s ]
+---------------------------------------------------------------
+[2019-08-20T15:44:27+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[2019-08-20T15:46:17+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000589s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[2019-08-20T15:46:19+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/config/options.html?spm=m-16-17-18
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000747s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[2019-08-20T15:46:23+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/news/index.html?spm=m-16-20-21
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_news` WHERE  `is_deleted` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[2019-08-20T15:46:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/fans/index.html?spm=m-16-20-22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `wechat_fans` WHERE  `appid` = 'wx60a43dd8161666d4' ORDER BY `subscribe_time` DESC LIMIT 0,20 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans_tags` [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `wechat_fans_tags` [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[2019-08-20T15:46:56+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000572s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.002960s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001166s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[2019-08-20T15:47:48+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003554s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001283s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[2019-08-20T15:47:51+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000717s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001142s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[2019-08-20T15:49:23+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000609s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[2019-08-20T15:49:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001968s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.002450s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001558s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.002299s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.002942s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.001463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001448s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.001423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.002613s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.001064s ]
+---------------------------------------------------------------
+[2019-08-20T15:51:21+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000645s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000348s ]
+---------------------------------------------------------------
+[2019-08-20T15:51:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000613s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[2019-08-20T15:51:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000735s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001391s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[2019-08-20T15:54:04+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000701s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[2019-08-20T15:54:05+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000804s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001329s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.001322s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001080s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000461s ]
+---------------------------------------------------------------
+[2019-08-20T15:55:05+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000607s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[2019-08-20T15:55:06+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000867s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001312s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000354s ]
+---------------------------------------------------------------
+[2019-08-20T15:56:11+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000620s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000418s ]
+---------------------------------------------------------------
+[2019-08-20T15:56:11+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000798s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001116s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[2019-08-20T15:59:01+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001245s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001218s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000876s ]
+---------------------------------------------------------------
+[2019-08-20T15:59:03+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000344s ]

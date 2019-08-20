@@ -1,77 +1,30 @@
-<?php /*a:2:{s:66:"/Users/sundebiao/PHPAdmin/application/wechat/view/index/index.html";i:1564341490;s:58:"/Users/sundebiao/PHPAdmin/application/admin/view/main.html";i:1564341490;}*/ ?>
-<div class="layui-card layui-bg-gray"><?php if(!(empty($title) || (($title instanceof \think\Collection || $title instanceof \think\Paginator ) && $title->isEmpty()))): ?><div class="layui-card-header layui-anim layui-anim-fadein notselect"><span class="layui-icon layui-icon-next font-s10 color-desc margin-right-5"></span><?php echo htmlentities((isset($title) && ($title !== '')?$title:'')); ?><div class="pull-right"></div></div><?php endif; ?><div class="layui-card-body layui-anim layui-anim-upbit"><style>    .store-total-container {
-        font-size: 14px;
-        margin-bottom: 20px;
-        letter-spacing: 1px;
-    }
-
-    .store-total-container .store-total-icon {
-        top: 45%;
-        right: 8%;
-        font-size: 65px;
-        position: absolute;
-        color: rgba(255, 255, 255, 0.4);
-    }
-
-    .store-total-container .store-total-item {
-        color: #fff;
-        line-height: 4em;
-        padding: 15px 25px;
-        position: relative;
-    }
-
-    .store-total-container .store-total-item > div:nth-child(2) {
-        font-size: 46px;
-        line-height: 46px;
-    }
-
-</style><div class="think-box-shadow store-total-container notselect"><div class="margin-bottom-15">微信统计</div><div class="layui-row layui-col-space15"><div class="layui-col-sm6 layui-col-md3"><div class="store-total-item nowrap" style="background:linear-gradient(-125deg,#57bdbf,#2f9de2)"><div>粉丝数量</div><div><?php echo htmlentities((isset($totalFans) && ($totalFans !== '')?$totalFans:'0')); ?></div><div>关注的粉丝数量</div></div><i class="store-total-icon layui-icon layui-icon-user"></i></div><div class="layui-col-sm6 layui-col-md3"><div class="store-total-item nowrap" style="background:linear-gradient(-125deg,#ff7d7d,#fb2c95)"><div>黑粉数量</div><div><?php echo htmlentities((isset($totalBlack) && ($totalBlack !== '')?$totalBlack:'0')); ?></div><div>拉黑的粉丝数量</div></div><i class="store-total-icon layui-icon layui-icon-auz"></i></div><div class="layui-col-sm6 layui-col-md3"><div class="store-total-item nowrap" style="background:linear-gradient(-113deg,#c543d8,#925cc3)"><div>图文总数</div><div><?php echo htmlentities((isset($totalNews) && ($totalNews !== '')?$totalNews:'0')); ?></div><div>图文素材数量</div></div><i class="store-total-icon layui-icon layui-icon-read"></i></div><div class="layui-col-sm6 layui-col-md3"><div class="store-total-item nowrap" style="background:linear-gradient(-141deg,#ecca1b,#f39526)"><div>回复数量</div><div><?php echo htmlentities((isset($totalRule) && ($totalRule !== '')?$totalRule:'0')); ?></div><div>回复规则数量</div></div><i class="store-total-icon layui-icon layui-icon-survey"></i></div></div></div><div class="think-box-shadow store-total-container"><div class="margin-bottom-15">近六月粉丝趋势</div><div id="main" style="height:390px"></div></div><script>
-    require(['echarts'], function (echarts, chart) {
-        chart = echarts.init(document.getElementById('main'));
-        window.onresize = chart.resize;
-        chart.setOption({
-            tooltip: {trigger: 'axis'},
-            grid: {top: '10%', left: '3%', right: '8%', bottom: '3%', containLabel: true},
-            xAxis: [{
-                type: 'category', scale: false,
-                boundaryGap: false,
-                axisLabel: {
-                    color: '#2f9de2',
-                },
-                data: eval('<?php echo json_encode($totalJson['xs']); ?>')
-            }],
-            yAxis: [{
-                type: 'value',
-                scale: true,
-                max: function (value) {
-                    return Math.ceil(value.max / 50) * 50 + 100;
-                },
-                axisLabel: {
-                    color: '#2f9de2',
-                    formatter: "{value}人"
-                },
-                splitLine: {
-                    lineStyle: {
-                        type: 'dashed',
-                        color: '#cccccc'
-                    }
-                }
-            }],
-            legend: {data: ['粉丝数量', '拉黑粉丝']},
-            series: [
-                {
-                    type: 'line',
-                    name: '粉丝数量',
-                    label: {normal: {show: true, position: ['30%', '-100%'], offset: [10, -10], formatter: "粉丝{c}人"}},
-                    data: eval('<?php echo json_encode($totalJson['ys']['_0']); ?>')
-                },
-                {
-                    type: 'line',
-                    name: '拉黑粉丝',
-                    label: {normal: {show: true, position: ['30%', '-100%'], offset: [10, -10], formatter: "拉黑{c}人"}},
-                    data: eval('<?php echo json_encode($totalJson['ys']['_1']); ?>')
-                }
-            ]
+<?php /*a:2:{s:66:"/Users/sundebiao/PHPAdmin/application/wechat/view/index/index.html";i:1566287358;s:58:"/Users/sundebiao/PHPAdmin/application/admin/view/main.html";i:1564341490;}*/ ?>
+<div class="layui-card layui-bg-gray"><?php if(!(empty($title) || (($title instanceof \think\Collection || $title instanceof \think\Paginator ) && $title->isEmpty()))): ?><div class="layui-card-header layui-anim layui-anim-fadein notselect"><span class="layui-icon layui-icon-next font-s10 color-desc margin-right-5"></span><?php echo htmlentities((isset($title) && ($title !== '')?$title:'')); ?><div class="pull-right"></div></div><?php endif; ?><div class="layui-card-body layui-anim layui-anim-upbit"><form onsubmit="return false;" data-auto="true" method="post" class='layui-form layui-card' autocomplete="off" lay-filter="build"><div class="layui-card-body"><div class="layui-form-item layui-inline"><label class="layui-form-label">版本号</label><div class="layui-input-inline"><select class="layui-select" name="version"><?php foreach(['0'=>'V7','1'=>'V8'] as $k=>$v): if(app('request')->get('status') == $k.""): ?><option selected value="<?php echo htmlentities($k); ?>"><?php echo htmlentities($v); ?></option><?php else: ?><option value="<?php echo htmlentities($k); ?>"><?php echo htmlentities($v); ?></option><?php endif; ?><?php endforeach; ?></select></div></div><div class="layui-form-item layui-inline"><label class="layui-form-label">项目</label><div class="layui-input-inline"><select class="layui-select" name="p_name"><?php foreach(['0'=>'沙巴克','1'=>'圣灵科技','2'=>'v8','3'=>'有讯'] as $k=>$v): if(app('request')->get('status') == $k.""): ?><option selected value="<?php echo htmlentities($k); ?>"><?php echo htmlentities($v); ?></option><?php else: ?><option value="<?php echo htmlentities($k); ?>"><?php echo htmlentities($v); ?></option><?php endif; ?><?php endforeach; ?></select></div></div><div class="layui-form-item"><label class="layui-form-label">项目名称<br><span class="nowrap color-desc"></span></label><div class="layui-input-block"><input name="project_name" required placeholder="请输入项目名称（必填）" value="<?php echo sysconf('project_name'); ?>" class="layui-input"><p class="help-block">打包人员定义的项目名称，作为查找项目索引之一。</p></div></div><div class="layui-form-item"><label class="layui-form-label">项目编号<br><span class="nowrap color-desc"></span></label><div class="layui-input-block"><input name="project_id" required placeholder="请输入项目编号（必填）" value="<?php echo sysconf('project_id'); ?>" class="layui-input"><p class="help-block">对应公司项目编号，作为查找项目索引之一。</p></div></div><!--        <div class="layui-form-item">--><!--            <label class="layui-form-label">项目编号<br><span class="nowrap color-desc"></span></label>--><!--            <div class="layui-input-block">--><!--                <input name="project_id" required placeholder="请输入项目编号（必填）" value="<?php echo sysconf('project_id'); ?>" class="layui-input">--><!--                <p class="help-block">对应公司项目编号，作为查找项目索引之一。</p>--><!--            </div>--><!--        </div>--><div class="layui-form-item"><label class="layui-form-label">包ID<br><span class="nowrap color-desc"></span></label><div class="layui-input-block"><input name="bundle_id" required placeholder="请输入BUNDLEID（必填）" value="<?php echo sysconf('bundle_id'); ?>" class="layui-input"><p class="help-block">项目Bundle indentifier。</p></div></div><div class="layui-form-item"><label class="layui-form-label">描述文件名<br><span class="nowrap color-desc"></span></label><div class="layui-input-block"><input name="specifier" required placeholder="请输入描述文件名（必填）" value="<?php echo sysconf('specifier'); ?>" class="layui-input"><p class="help-block">描述文件名。</p></div></div><div class="layui-form-item"><label class="layui-form-label">P12证书密码<br><span class="nowrap color-desc"></span></label><div class="layui-input-block"><input name="p12_pwd" required placeholder="请输入p12证书密码（必填）" value="<?php echo sysconf('p12_pwd'); ?>" class="layui-input"><p class="help-block">p12证书对应的密码。</p></div></div><!--        <div class="layui-form-item">--><!--            <label class="layui-form-label">工程Target<br><span class="nowrap color-desc"></span></label>--><!--            <div class="layui-input-block">--><!--                <input name="target" required placeholder="请输入工程Target（必填）" value="<?php echo sysconf('target'); ?>" class="layui-input">--><!--                <p class="help-block">工程Target，可以在终端cd进入工程根目录，输入'xcodebuild -list' 获取。</p>--><!--            </div>--><!--        </div>--><!--        <div class="layui-form-item">--><!--            <label class="layui-form-label">工程名称<br><span class="nowrap color-desc"></span></label>--><!--            <div class="layui-input-block">--><!--                <input name="name" placeholder="请输入工程名称（必填）" maxlength="32" required value="<?php echo sysconf('name'); ?>" class="layui-input">--><!--                <p class="help-block">项目的工程名称。</p>--><!--            </div>--><!--        </div>--><!--        <div class="layui-form-item">--><!--            <label class="layui-form-label">工程Scheme<br><span class="nowrap color-desc"></span></label>--><!--            <div class="layui-input-block">--><!--                <input name="scheme" placeholder="请输入工程Scheme（必填）" maxlength="32" required value="<?php echo sysconf('scheme'); ?>" class="layui-input">--><!--                <p class="help-block">项目的工程Scheme。</p>--><!--            </div>--><!--        </div>--><!--        <div class="layui-form-item">--><!--            <label class="layui-form-label">DEMO_APP_ID<br><span class="nowrap color-desc"></span></label>--><!--            <div class="layui-input-block">--><!--                <input name="demo_app_id" placeholder="请输入DEMO_APP_ID（必填）" maxlength="32" required value="<?php echo sysconf('demo_app_id'); ?>" class="layui-input">--><!--                <p class="help-block">DEMO_APP_ID。</p>--><!--            </div>--><!--        </div>--><!--        <div class="layui-form-item">--><!--            <label class="layui-form-label">SDK_APP_ID<br><span class="nowrap color-desc"></span></label>--><!--            <div class="layui-input-block">--><!--                <input name="sdk_app_id" placeholder="请输入SDK_APP_ID（必填）" maxlength="32" required value="<?php echo sysconf('sdk_app_id'); ?>" class="layui-input">--><!--                <p class="help-block">SDK_APP_ID。</p>--><!--            </div>--><!--        </div>--><!--        <div class="layui-form-item">--><!--            <label class="layui-form-label">SDK_MAINURL<br><span class="nowrap color-desc"></span></label>--><!--            <div class="layui-input-block">--><!--                <input name="sdk_mainurl" placeholder="请输入SDK_MAINURL（必填）" maxlength="32" required value="<?php echo sysconf('sdk_mainurl'); ?>" class="layui-input">--><!--                <p class="help-block">SDK_MAINURL。</p>--><!--            </div>--><!--        </div>--><!--        <div class="layui-form-item">--><!--            <label class="layui-form-label">PUBLIC_KEY<br><span class="nowrap color-desc"></span></label>--><!--            <div class="layui-input-block">--><!--                <input name="public_key" placeholder="请输入PUBLIC_KEY（必填）" maxlength="32" required value="<?php echo sysconf('public_key'); ?>" class="layui-input">--><!--                <p class="help-block">PUBLIC_KEY。</p>--><!--            </div>--><!--        </div>--><!--        <div class="layui-form-item">--><!--            <label class="layui-form-label">PL_CHANNLE<br><span class="nowrap color-desc"></span></label>--><!--            <div class="layui-input-block">--><!--                <input name="pl_channle" placeholder="请输入PL_CHANNLE（必填）" maxlength="32" required value="<?php echo sysconf('pl_channle'); ?>" class="layui-input">--><!--                <p class="help-block">PL_CHANNLE。</p>--><!--            </div>--><!--        </div>--><label class="layui-form-label">打包类型<br><span class="nowrap color-desc"></span></label><div class="layui-input-block"><?php foreach(['appstore'=>'appstore','ad hoc'=>'ad hoc'] as $k=>$v): ?><input type="radio" data-pem-type="<?php echo htmlentities($k); ?>" name="build_type" value="<?php echo htmlentities($k); ?>" title="<?php echo htmlentities($v); ?>" lay-filter="data-mch-type"><?php endforeach; ?><p class="help-block">请选择打包类型，appstore 和 ad hoc 二选一！</p></div><!--        <label class="layui-form-label">编译类型<br><span class="nowrap color-desc"></span></label>--><!--        <div class="layui-input-block">--><!--            <?php foreach(['xcodeproj'=>'xcodeproj','xcworkspace'=>'xcworkspace'] as $k=>$v): ?>--><!--            <input type="radio" data-pem-type="<?php echo htmlentities($k); ?>" name="wechat_mch_ssl_type" value="<?php echo htmlentities($k); ?>" title="<?php echo htmlentities($v); ?>" lay-filter="data-mch-type">--><!--            <?php endforeach; ?>--><!--            <p class="help-block">请选择编译类型，xcodeproj 和 xcworkspace 二选一！</p>--><!--        </div>--><!--        <div class="hr-line-dashed"></div>--><!--        &lt;!&ndash; eigo 这里之前是上传证书--><div class="layui-form-item"><label class="layui-form-label">相关证书<br><span class="nowrap color-desc"></span></label><div class="layui-input-block"><?php foreach(['pem'=>'点击上传'] as $k=>$v): ?><input type="radio" data-pem-type="<?php echo htmlentities($k); ?>" name="wechat_mch_ssl_type" value="<?php echo htmlentities($k); ?>" title="<?php echo htmlentities($v); ?>" lay-filter="data-mch-type"><?php endforeach; ?><p class="help-block">请上传证书，P12 和 mobileprovision！</p><div data-mch-type="p12" class="layui-tab-item padding-top-15 padding-bottom-15"><input name="wechat_mch_ssl_p12" value="<?php echo htmlentities((isset($wechat_mch_ssl_p12) && ($wechat_mch_ssl_p12 !== '')?$wechat_mch_ssl_p12:'')); ?>" type="hidden"><!--                    <button data-file="btn" data-uptype="local" data-safe="true" data-type="p12" data-field="wechat_mch_ssl_p12" type="button" class="layui-btn layui-btn-primary">--><!--                        <i class="layui-icon layui-icon-vercode font-s14"></i> 上传 P12 证书--><!--                    </button>--><p class="help-block margin-top-10"></p></div><div data-mch-type="pem" class="layui-tab-item padding-top-15 padding-bottom-15"><input name="wechat_mch_ssl_key" value="<?php echo htmlentities((isset($wechat_mch_ssl_key) && ($wechat_mch_ssl_key !== '')?$wechat_mch_ssl_key:'')); ?>" type="hidden"><button data-file="btn" data-uptype="local" data-safe="true" data-type="p12" data-field="wechat_mch_ssl_key" type="button" class="layui-btn layui-btn-primary margin-right-5"><i class="layui-icon layui-icon-vercode font-s14"></i> 上传 p12 证书
+                    </button><input name="wechat_mch_ssl_cer" value="<?php echo htmlentities((isset($wechat_mch_ssl_cer) && ($wechat_mch_ssl_cer !== '')?$wechat_mch_ssl_cer:'')); ?>" type="hidden"><button data-file="btn" data-uptype="local" data-safe="true" data-type="mobileprovision" data-field="wechat_mch_ssl_cer" type="button" class="layui-btn layui-btn-primary"><i class="layui-icon layui-icon-vercode font-s14"></i> 上传 cer 证书
+                    </button><p class="help-block margin-top-10">.p12：使设备不需要在苹果开发者网站重新申请开发和发布证书，就能使用；mobileprovision证书：.mobileprovision文件格式的配置文件是让开发者的项目（APP）能有真机调试，发布的权限。</p></div></div></div><div class="hr-line-dashed"></div><div class="layui-form-item"><label class="layui-form-label"></label><div class="layui-input-block text-center" style="max-width:300px"><button class="layui-btn" type="submit">开始打包</button></div></div></div></form></div><script>
+    (function () {
+        form.render();
+        this.type = "<?php echo sysconf('wechat_mch_ssl_type'); ?>" || 'p12';
+        form.val('build', {wechat_mch_ssl_type: this.type});
+        form.on('radio(data-mch-type)', function (data) {
+            apply(data.value);
         });
-    });
-</script></div></div>
+        apply.call(this, this.type);
+
+        function apply(type) {
+            $('[data-mch-type="' + type + '"]').show().siblings('[data-mch-type]').hide();
+        };
+        // 证书文件上传控制
+        this.types = ['wechat_mch_ssl_p12', 'wechat_mch_ssl_key', 'wechat_mch_ssl_cer'];
+        for (var i in this.types) $('input[name="' + this.types[i] + '"]').on('change', function () {
+            var input = this, $button = $(this).next('button');
+            setTimeout(function () {
+                if (typeof input.value === 'string' && input.value.length > 5) {
+                    $button.find('i').addClass('color-green layui-icon-vercode').removeClass('layui-icon-upload-drag');
+                } else {
+                    $button.find('i').removeClass('color-green layui-icon-vercode').addClass('layui-icon-upload-drag');
+                }
+            }, 300);
+        }).trigger('change');
+    })({});
+</script></div>
