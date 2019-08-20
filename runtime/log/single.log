@@ -8454,3 +8454,1576 @@
   4 => 'query',
   5 => 'query2',
 ) ]
+---------------------------------------------------------------
+[2019-08-20T10:02:08+08:00] 127.0.0.1 GET 0.0.0.0:8000/
+[运行时间：0.051599s] [吞吐率：19.38req/s] [内存消耗：1,978.95kb] [文件加载：73]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-08-20T10:02:08+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/login.html
+[运行时间：0.160989s] [吞吐率：6.21req/s] [内存消耗：3,061.09kb] [文件加载：82]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/login/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'devMode',
+  5 => 'loginskey',
+) ]
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-08-20T10:02:10+08:00] 127.0.0.1 GET 0.0.0.0:8000/upload/decb0fe26fa3f486/b3f6521bf29403c8.png
+[运行时间：0.025492s] [吞吐率：39.23req/s] [内存消耗：1,525.52kb] [文件加载：60]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-08-20T10:02:14+08:00] 127.0.0.1 POST 0.0.0.0:8000/admin/login.html
+[运行时间：0.054643s] [吞吐率：18.30req/s] [内存消耗：3,066.91kb] [文件加载：85]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'content-length' => '56',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://0.0.0.0:8000',
+  'referer' => 'http://0.0.0.0:8000/admin/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'fd99fe8a86cdaca8a98e564c95995b6e',
+)
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-08-20T10:02:14+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[运行时间：0.063441s] [吞吐率：15.76req/s] [内存消耗：4,186.25kb] [文件加载：125]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://0.0.0.0:8000/admin/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:02:15+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[运行时间：0.072758s] [吞吐率：13.74req/s] [内存消耗：3,051.20kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/main.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'think_ver',
+  4 => 'mysql_ver',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:02:15+08:00] 127.0.0.1 GET 0.0.0.0:8000/upload/decb0fe26fa3f486/b3f6521bf29403c8.png
+[运行时间：0.015730s] [吞吐率：63.57req/s] [内存消耗：1,525.52kb] [文件加载：60]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-08-20T10:09:16+08:00] 127.0.0.1 GET 0.0.0.0:8000/
+[运行时间：0.033346s] [吞吐率：29.99req/s] [内存消耗：1,968.37kb] [文件加载：71]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-08-20T10:09:16+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/login.html
+[运行时间：0.026194s] [吞吐率：38.18req/s] [内存消耗：1,992.64kb] [文件加载：71]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-08-20T10:09:16+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[运行时间：0.063843s] [吞吐率：15.66req/s] [内存消耗：4,172.21kb] [文件加载：125]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:09:17+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[运行时间：0.043274s] [吞吐率：23.11req/s] [内存消耗：3,051.20kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/main.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'think_ver',
+  4 => 'mysql_ver',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:09:20+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/config/info.html?spm=m-2-4-11
+[运行时间：0.024590s] [吞吐率：40.67req/s] [内存消耗：2,239.80kb] [文件加载：78]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-2-4-11',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/config/info.html [ array (
+  0 => 'table',
+  1 => 'ossPoints',
+  2 => 'request',
+  3 => 'csrf_state',
+  4 => 'csrf_message',
+  5 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:09:20+08:00] 127.0.0.1 GET 0.0.0.0:8000/upload/decb0fe26fa3f486/b3f6521bf29403c8.png
+[运行时间：0.025105s] [吞吐率：39.83req/s] [内存消耗：1,525.52kb] [文件加载：60]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-08-20T10:09:27+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[运行时间：0.024897s] [吞吐率：40.17req/s] [内存消耗：2,203.86kb] [文件加载：78]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-37-40-38',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/service/view/config/index.html [ array (
+  0 => 'table',
+  1 => 'request',
+  2 => 'csrf_state',
+  3 => 'csrf_message',
+  4 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:09:32+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/config/info.html?spm=m-2-4-11
+[运行时间：0.027582s] [吞吐率：36.26req/s] [内存消耗：2,243.83kb] [文件加载：78]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-2-4-11',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/config/info.html [ array (
+  0 => 'table',
+  1 => 'ossPoints',
+  2 => 'request',
+  3 => 'csrf_state',
+  4 => 'csrf_message',
+  5 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:09:32+08:00] 127.0.0.1 GET 0.0.0.0:8000/upload/decb0fe26fa3f486/b3f6521bf29403c8.png
+[运行时间：0.024996s] [吞吐率：40.01req/s] [内存消耗：1,525.52kb] [文件加载：60]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-08-20T10:10:01+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[运行时间：0.036012s] [吞吐率：27.77req/s] [内存消耗：2,207.85kb] [文件加载：78]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-37-40-38',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/service/view/config/index.html [ array (
+  0 => 'table',
+  1 => 'request',
+  2 => 'csrf_state',
+  3 => 'csrf_message',
+  4 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:10:23+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[运行时间：0.056275s] [吞吐率：17.77req/s] [内存消耗：3,053.03kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-16-17-55',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/wechat/view/index/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'totalJson',
+  4 => 'totalFans',
+  5 => 'totalBlack',
+  6 => 'totalNews',
+  7 => 'totalRule',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:10:30+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[运行时间：3.746826s] [吞吐率：0.27req/s] [内存消耗：3,264.27kb] [文件加载：85]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-45',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/config/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'query',
+  5 => 'query2',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:19+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/message/index.html?spm=m-13-47-46
+[运行时间：0.065685s] [吞吐率：15.22req/s] [内存消耗：3,184.16kb] [文件加载：88]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/message/index.html [ array (
+  0 => 'page',
+  1 => 'list',
+  2 => 'table',
+  3 => 'request',
+  4 => 'csrf_state',
+  5 => 'csrf_message',
+  6 => 'title',
+  7 => 'pagehtml',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:20+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/express_company/index.html?spm=m-13-47-50
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：3,259.63kb] [文件加载：88]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/express_company/index.html [ array (
+  0 => 'page',
+  1 => 'list',
+  2 => 'table',
+  3 => 'request',
+  4 => 'csrf_state',
+  5 => 'csrf_message',
+  6 => 'title',
+  7 => 'pagehtml',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:21+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/express_template/index.html?spm=m-13-47-52
+[运行时间：0.070702s] [吞吐率：14.14req/s] [内存消耗：3,061.47kb] [文件加载：79]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-52',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/express_template/index.html [ array (
+  0 => 'table',
+  1 => 'request',
+  2 => 'csrf_state',
+  3 => 'csrf_message',
+  4 => 'title',
+  5 => 'provinces',
+  6 => 'list',
+  7 => 'default',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:22+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/goods_cate/index.html?spm=m-13-48-44
+[运行时间：0.053407s] [吞吐率：18.72req/s] [内存消耗：3,196.85kb] [文件加载：88]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-48-44',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/goods_cate/index.html [ array (
+  0 => 'page',
+  1 => 'list',
+  2 => 'table',
+  3 => 'request',
+  4 => 'csrf_state',
+  5 => 'csrf_message',
+  6 => 'title',
+  7 => 'pagehtml',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:23+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/goods/index.html?spm=m-13-48-14
+[运行时间：0.053913s] [吞吐率：18.55req/s] [内存消耗：3,242.74kb] [文件加载：88]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-48-14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/goods/index.html [ array (
+  0 => 'page',
+  1 => 'list',
+  2 => 'table',
+  3 => 'request',
+  4 => 'csrf_state',
+  5 => 'csrf_message',
+  6 => 'title',
+  7 => 'pagehtml',
+  8 => 'clist',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/order/index.html?spm=m-13-48-43
+[运行时间：0.060083s] [吞吐率：16.64req/s] [内存消耗：3,252.95kb] [文件加载：88]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-48-43',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/order/index.html [ array (
+  0 => 'page',
+  1 => 'list',
+  2 => 'table',
+  3 => 'request',
+  4 => 'csrf_state',
+  5 => 'csrf_message',
+  6 => 'title',
+  7 => 'pagehtml',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/member/index.html?spm=m-13-48-42
+[运行时间：0.075387s] [吞吐率：13.26req/s] [内存消耗：3,188.59kb] [文件加载：88]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-48-42',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/member/index.html [ array (
+  0 => 'page',
+  1 => 'list',
+  2 => 'table',
+  3 => 'request',
+  4 => 'csrf_state',
+  5 => 'csrf_message',
+  6 => 'title',
+  7 => 'pagehtml',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:25+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/order/index.html?spm=m-13-48-43
+[运行时间：0.038845s] [吞吐率：25.74req/s] [内存消耗：3,252.95kb] [文件加载：88]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-48-43',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/order/index.html [ array (
+  0 => 'page',
+  1 => 'list',
+  2 => 'table',
+  3 => 'request',
+  4 => 'csrf_state',
+  5 => 'csrf_message',
+  6 => 'title',
+  7 => 'pagehtml',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:27+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[运行时间：0.147613s] [吞吐率：6.77req/s] [内存消耗：2,376.73kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-45',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/config/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'query',
+  5 => 'query2',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:30+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[运行时间：0.045982s] [吞吐率：21.75req/s] [内存消耗：3,102.95kb] [文件加载：83]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-37-40-38',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/service/view/config/index.html [ array (
+  0 => 'table',
+  1 => 'request',
+  2 => 'csrf_state',
+  3 => 'csrf_message',
+  4 => 'title',
+) ]
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-08-20T10:11:35+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[运行时间：0.146527s] [吞吐率：6.82req/s] [内存消耗：2,380.20kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-45',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/config/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'query',
+  5 => 'query2',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:41+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[运行时间：0.032376s] [吞吐率：30.89req/s] [内存消耗：3,066.77kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/main.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'think_ver',
+  4 => 'mysql_ver',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:42+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[运行时间：0.145736s] [吞吐率：6.86req/s] [内存消耗：2,382.45kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-45',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/config/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'query',
+  5 => 'query2',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:43+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[运行时间：0.026801s] [吞吐率：37.31req/s] [内存消耗：3,069.52kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/main.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'think_ver',
+  4 => 'mysql_ver',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:11:45+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[运行时间：0.144050s] [吞吐率：6.94req/s] [内存消耗：2,385.21kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-45',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/config/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'query',
+  5 => 'query2',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:13:31+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/message/index.html?spm=m-13-47-46
+[运行时间：0.058930s] [吞吐率：16.97req/s] [内存消耗：3,194.42kb] [文件加载：88]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-46',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/message/index.html [ array (
+  0 => 'page',
+  1 => 'list',
+  2 => 'table',
+  3 => 'request',
+  4 => 'csrf_state',
+  5 => 'csrf_message',
+  6 => 'title',
+  7 => 'pagehtml',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:13:32+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/express_company/index.html?spm=m-13-47-50
+[运行时间：0.037112s] [吞吐率：26.95req/s] [内存消耗：3,269.88kb] [文件加载：88]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-50',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/express_company/index.html [ array (
+  0 => 'page',
+  1 => 'list',
+  2 => 'table',
+  3 => 'request',
+  4 => 'csrf_state',
+  5 => 'csrf_message',
+  6 => 'title',
+  7 => 'pagehtml',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:13:32+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/express_template/index.html?spm=m-13-47-52
+[运行时间：0.069090s] [吞吐率：14.47req/s] [内存消耗：3,071.71kb] [文件加载：79]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-52',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/express_template/index.html [ array (
+  0 => 'table',
+  1 => 'request',
+  2 => 'csrf_state',
+  3 => 'csrf_message',
+  4 => 'title',
+  5 => 'provinces',
+  6 => 'list',
+  7 => 'default',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:13:33+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[运行时间：0.164726s] [吞吐率：6.07req/s] [内存消耗：3,276.54kb] [文件加载：85]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-45',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/config/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'query',
+  5 => 'query2',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:35:02+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[运行时间：0.060988s] [吞吐率：16.40req/s] [内存消耗：4,194.95kb] [文件加载：125]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:35:04+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[运行时间：2.199707s] [吞吐率：0.45req/s] [内存消耗：2,371.73kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-45',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/config/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'query',
+  5 => 'query2',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:35:06+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[运行时间：0.038894s] [吞吐率：25.71req/s] [内存消耗：3,048.01kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-16-17-55',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/wechat/view/index/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'totalJson',
+  4 => 'totalFans',
+  5 => 'totalBlack',
+  6 => 'totalNews',
+  7 => 'totalRule',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:35:07+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[运行时间：0.027644s] [吞吐率：36.17req/s] [内存消耗：2,203.16kb] [文件加载：78]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-37-40-38',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/service/view/config/index.html [ array (
+  0 => 'table',
+  1 => 'request',
+  2 => 'csrf_state',
+  3 => 'csrf_message',
+  4 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:35:08+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/config/info.html?spm=m-2-4-11
+[运行时间：0.042569s] [吞吐率：23.49req/s] [内存消耗：2,242.70kb] [文件加载：78]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-2-4-11',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/config/info.html [ array (
+  0 => 'table',
+  1 => 'ossPoints',
+  2 => 'request',
+  3 => 'csrf_state',
+  4 => 'csrf_message',
+  5 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:35:08+08:00] 127.0.0.1 GET 0.0.0.0:8000/upload/decb0fe26fa3f486/b3f6521bf29403c8.png
+[运行时间：0.040636s] [吞吐率：24.61req/s] [内存消耗：1,525.52kb] [文件加载：60]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-08-20T10:35:08+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[运行时间：0.045807s] [吞吐率：21.83req/s] [内存消耗：2,207.03kb] [文件加载：78]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-37-40-38',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/service/view/config/index.html [ array (
+  0 => 'table',
+  1 => 'request',
+  2 => 'csrf_state',
+  3 => 'csrf_message',
+  4 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:35:09+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[运行时间：0.078452s] [吞吐率：12.75req/s] [内存消耗：3,052.71kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-16-17-55',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/wechat/view/index/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'totalJson',
+  4 => 'totalFans',
+  5 => 'totalBlack',
+  6 => 'totalNews',
+  7 => 'totalRule',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:35:09+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[运行时间：0.197416s] [吞吐率：5.07req/s] [内存消耗：2,374.13kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-45',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/config/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'query',
+  5 => 'query2',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:35:10+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[运行时间：0.040393s] [吞吐率：24.76req/s] [内存消耗：3,060.45kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/main.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'think_ver',
+  4 => 'mysql_ver',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:36:45+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[运行时间：0.053231s] [吞吐率：18.79req/s] [内存消耗：4,195.28kb] [文件加载：125]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'menus',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:36:46+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[运行时间：0.049802s] [吞吐率：20.08req/s] [内存消耗：3,060.45kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/main.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'think_ver',
+  4 => 'mysql_ver',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:36:48+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[运行时间：0.161534s] [吞吐率：6.19req/s] [内存消耗：2,376.14kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-45',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/config/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'query',
+  5 => 'query2',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:36:50+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[运行时间：0.036770s] [吞吐率：27.20req/s] [内存消耗：3,056.98kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-16-17-55',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/wechat/view/index/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'totalJson',
+  4 => 'totalFans',
+  5 => 'totalBlack',
+  6 => 'totalNews',
+  7 => 'totalRule',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:36:51+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[运行时间：0.027188s] [吞吐率：36.78req/s] [内存消耗：2,212.13kb] [文件加载：78]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-37-40-38',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/service/view/config/index.html [ array (
+  0 => 'table',
+  1 => 'request',
+  2 => 'csrf_state',
+  3 => 'csrf_message',
+  4 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:36:53+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/config/info.html?spm=m-2-4-11
+[运行时间：0.031237s] [吞吐率：32.01req/s] [内存消耗：2,252.16kb] [文件加载：78]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-2-4-11',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/config/info.html [ array (
+  0 => 'table',
+  1 => 'ossPoints',
+  2 => 'request',
+  3 => 'csrf_state',
+  4 => 'csrf_message',
+  5 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:36:53+08:00] 127.0.0.1 GET 0.0.0.0:8000/upload/decb0fe26fa3f486/b3f6521bf29403c8.png
+[运行时间：0.032400s] [吞吐率：30.86req/s] [内存消耗：1,525.52kb] [文件加载：60]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-08-20T10:36:54+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[运行时间：0.038077s] [吞吐率：26.26req/s] [内存消耗：2,216.19kb] [文件加载：78]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-37-40-38',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/service/view/config/index.html [ array (
+  0 => 'table',
+  1 => 'request',
+  2 => 'csrf_state',
+  3 => 'csrf_message',
+  4 => 'title',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:36:55+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[运行时间：0.075325s] [吞吐率：13.28req/s] [内存消耗：3,061.62kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-16-17-55',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/wechat/view/index/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'totalJson',
+  4 => 'totalFans',
+  5 => 'totalBlack',
+  6 => 'totalNews',
+  7 => 'totalRule',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:36:55+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[运行时间：0.214276s] [吞吐率：4.67req/s] [内存消耗：2,383.04kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-13-47-45',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/store/view/config/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'title',
+  4 => 'query',
+  5 => 'query2',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:36:56+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[运行时间：0.035814s] [吞吐率：27.92req/s] [内存消耗：3,070.11kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/admin/view/index/main.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'think_ver',
+  4 => 'mysql_ver',
+) ]
+---------------------------------------------------------------
+[2019-08-20T10:38:30+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[运行时间：0.041404s] [吞吐率：24.15req/s] [内存消耗：3,109.13kb] [文件加载：83]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-37-40-38',
+)
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/service/view/config/index.html [ array (
+  0 => 'table',
+  1 => 'request',
+  2 => 'csrf_state',
+  3 => 'csrf_message',
+  4 => 'title',
+) ]
+[ info ] [ DB ] INIT mysql
+---------------------------------------------------------------
+[2019-08-20T10:38:33+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[运行时间：0.041132s] [吞吐率：24.31req/s] [内存消耗：3,064.96kb] [文件加载：80]
+[ info ] [ LANG ] /Users/sundebiao/PHPAdmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => '0.0.0.0:8000',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3887.0 Safari/537.36',
+  'referer' => 'http://0.0.0.0:8000/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 's594e89e7=6ac5a29299982650e0f1d0693b34f5e2; s68512a25=73a4713f6f29a5bdc28c1eb1c266b72f; page-limit=20',
+)
+[ info ] [ PARAM ] array (
+  'spm' => 'm-16-17-55',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/sundebiao/PHPAdmin/application/wechat/view/index/index.html [ array (
+  0 => 'request',
+  1 => 'csrf_state',
+  2 => 'csrf_message',
+  3 => 'totalJson',
+  4 => 'totalFans',
+  5 => 'totalBlack',
+  6 => 'totalNews',
+  7 => 'totalRule',
+) ]

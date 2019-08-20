@@ -1,0 +1,64 @@
+
+
+{extend name='admin@main'}
+
+{block name="button"}
+
+{if auth("wechat/fans/setblack")}
+<button data-action='{:url("setblack")}' data-rule="openid#{key}" data-csrf="{:systoken('wechat/fans/setblack')}" class='layui-btn layui-btn-sm layui-btn-primary'>下载IPA</button>
+<!--{/if}-->
+
+<!--&lt;!&ndash;{if auth("wechat/fans/delblack")}&ndash;&gt;-->
+<!--<button data-action='{:url("delblack")}' data-rule="openid#{key}" data-csrf="{:systoken('wechat/fans/delblack')}" class='layui-btn layui-btn-sm layui-btn-primary'>取消拉黑</button>-->
+<!--&lt;!&ndash;{/if}&ndash;&gt;-->
+
+<!--{if auth("wechat/fans/sync")}-->
+<!--<button data-load='{:url("sync")}' class='layui-btn layui-btn-sm layui-btn-primary'>同步粉丝</button>-->
+<!--{/if}-->
+
+{/block}
+
+{block name="content"}
+
+
+
+
+<table class="layui-table" lay-skin="line">
+    <caption class="margin-bottom-10 text-left">{include file='fans/index_search'}</caption>
+    <!--{notempty name='list'}-->
+    <thead>
+    <tr>
+        <th class='list-table-check-td think-checkbox'>
+            <input data-auto-none data-check-target='.list-check-box' type='checkbox'>
+        </th>
+        <th class='text-left nowrap'>项目名称</th>
+        <th class='text-left nowrap'>项目编号</th>
+        <th class='text-left nowrap'>打包类型</th>
+        <th class='text-left nowrap'>版本号</th>
+        <th class='text-left nowrap'>打包状态</th>
+        <th class='text-left nowrap'>项目</th>
+        <th class='text-left nowrap'>包ID</th>
+        <th class='text-left nowrap'>打包时间</th>
+    </tr>
+    </thead>
+    <!--{/notempty}-->
+    <tbody>
+    <!--{foreach $list as $key=>$vo}-->
+    <tr>
+        <td class='list-table-check-td think-checkbox'><input class="list-check-box" value='{$vo.id}' type='checkbox'></td>
+        <td>{$vo.project_name|default=''}</td>
+        <td>{$vo.project_id|default=''}</td>
+        <td>{$vo.build_type|default=''}</td>
+        <td>{$vo.version|default=''}</td>
+        <td>{$vo.status|default=''}</td>
+        <td>{$vo.custom_name|default=''}</td>
+        <td>{$vo.bundle_id|default=''}</td>
+        <td>{$vo.create_at|default=''}<br></td>
+    </tr>
+    <!--{/foreach}-->
+    </tbody>
+</table>
+
+{empty name='list'}<span class="notdata">没有记录哦</span>{else}{$pagehtml|raw|default=''}{/empty}
+
+{/block}

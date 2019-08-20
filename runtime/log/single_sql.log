@@ -1322,3 +1322,273 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000627s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
 [ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000688s ]
 [ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000423s ]
+---------------------------------------------------------------
+[2019-08-20T10:02:08+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053566s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.060531s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.002056s ]
+---------------------------------------------------------------
+[2019-08-20T10:02:14+08:00] 127.0.0.1 POST 0.0.0.0:8000/admin/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000664s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.004699s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `is_deleted` = 0  AND `username` = 'admin' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.005891s ]
+[ sql ] [ SQL ] UPDATE `system_user`  SET `login_at` = now() , `login_ip` = '127.0.0.1' , `login_num` = login_num+1  WHERE  `id` = 10000 [ RunTime:0.003877s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_log` [ RunTime:0.002016s ]
+[ sql ] [ SQL ] INSERT INTO `system_log` (`node` , `action` , `content` , `geoip` , `username`) VALUES ('admin/login/index' , '系统管理' , '用户登录系统成功' , '127.0.0.1' , 'admin') [ RunTime:0.001026s ]
+---------------------------------------------------------------
+[2019-08-20T10:02:14+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000654s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.004220s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.002122s ]
+---------------------------------------------------------------
+[2019-08-20T10:02:15+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000892s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.006856s ]
+---------------------------------------------------------------
+[2019-08-20T10:09:16+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000464s ]
+---------------------------------------------------------------
+[2019-08-20T10:09:17+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000781s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[2019-08-20T10:10:23+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001471s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.005647s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.002606s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.002057s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[2019-08-20T10:10:30+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000966s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001085s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000684s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:19+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/message/index.html?spm=m-13-47-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000620s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_member_sms_history` [ RunTime:0.004847s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store_member_sms_history` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `store_member_sms_history` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:20+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/express_company/index.html?spm=m-13-47-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000749s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_express_company` [ RunTime:0.007385s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store_express_company` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `store_express_company` ORDER BY `status` DESC,`sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.000829s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:21+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/express_template/index.html?spm=m-13-47-52
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000596s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_express_template` [ RunTime:0.010780s ]
+[ sql ] [ SQL ] SELECT * FROM `store_express_template` WHERE  `is_default` = 0 [ RunTime:0.002321s ]
+[ sql ] [ SQL ] SELECT * FROM `store_express_template` WHERE  `is_default` = 1 LIMIT 1 [ RunTime:0.000743s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:22+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/goods_cate/index.html?spm=m-13-48-44
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000733s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_goods_cate` [ RunTime:0.008898s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store_goods_cate` WHERE  `is_deleted` = 0 [ RunTime:0.001516s ]
+[ sql ] [ SQL ] SELECT * FROM `store_goods_cate` WHERE  `is_deleted` = 0 ORDER BY `sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.000837s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:23+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/goods/index.html?spm=m-13-48-14
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_goods` [ RunTime:0.006007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store_goods` WHERE  `is_deleted` = 0 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `store_goods` WHERE  `is_deleted` = 0 ORDER BY `sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_goods_cate` [ RunTime:0.002209s ]
+[ sql ] [ SQL ] SELECT * FROM `store_goods_cate` WHERE  `is_deleted` = 0  AND `status` = 1 [ RunTime:0.002198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_goods_list` [ RunTime:0.003019s ]
+[ sql ] [ SQL ] SELECT * FROM `store_goods_list` WHERE  `status` = 1  AND `goods_id` IN ('') [ RunTime:0.001395s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/order/index.html?spm=m-13-48-43
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002448s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_order` [ RunTime:0.007926s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store_order` [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `store_order` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000769s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_order_list` [ RunTime:0.002489s ]
+[ sql ] [ SQL ] SELECT * FROM `store_order_list` WHERE  `order_no` IN ('') [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_member` [ RunTime:0.002245s ]
+[ sql ] [ SQL ] SELECT * FROM `store_member` WHERE  `id` IN ('') [ RunTime:0.000595s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:24+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/member/index.html?spm=m-13-48-42
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000845s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_member` [ RunTime:0.001262s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store_member` [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT * FROM `store_member` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000948s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:25+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/order/index.html?spm=m-13-48-43
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000705s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_order` [ RunTime:0.001181s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store_order` [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `store_order` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_order_list` [ RunTime:0.000971s ]
+[ sql ] [ SQL ] SELECT * FROM `store_order_list` WHERE  `order_no` IN ('') [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_member` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `store_member` WHERE  `id` IN ('') [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:30+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000599s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000436s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:41+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000623s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000275s ]
+---------------------------------------------------------------
+[2019-08-20T10:11:43+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000668s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000288s ]
+---------------------------------------------------------------
+[2019-08-20T10:13:31+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/message/index.html?spm=m-13-47-46
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_member_sms_history` [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store_member_sms_history` [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `store_member_sms_history` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.007195s ]
+---------------------------------------------------------------
+[2019-08-20T10:13:32+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/express_company/index.html?spm=m-13-47-50
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000608s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_express_company` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store_express_company` [ RunTime:0.001625s ]
+[ sql ] [ SQL ] SELECT * FROM `store_express_company` ORDER BY `status` DESC,`sort` DESC,`id` DESC LIMIT 0,20 [ RunTime:0.000920s ]
+---------------------------------------------------------------
+[2019-08-20T10:13:32+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/express_template/index.html?spm=m-13-47-52
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000606s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_express_template` [ RunTime:0.003158s ]
+[ sql ] [ SQL ] SELECT * FROM `store_express_template` WHERE  `is_default` = 0 [ RunTime:0.001421s ]
+[ sql ] [ SQL ] SELECT * FROM `store_express_template` WHERE  `is_default` = 1 LIMIT 1 [ RunTime:0.000864s ]
+---------------------------------------------------------------
+[2019-08-20T10:13:33+08:00] 127.0.0.1 GET 0.0.0.0:8000/store/config/index.html?spm=m-13-47-45
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000617s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001886s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000877s ]
+---------------------------------------------------------------
+[2019-08-20T10:35:02+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000657s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001167s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000412s ]
+---------------------------------------------------------------
+[2019-08-20T10:35:06+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000242s ]
+---------------------------------------------------------------
+[2019-08-20T10:35:09+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000649s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001369s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000279s ]
+---------------------------------------------------------------
+[2019-08-20T10:35:10+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000605s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000284s ]
+---------------------------------------------------------------
+[2019-08-20T10:36:45+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000659s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_menu` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.001176s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000692s ]
+---------------------------------------------------------------
+[2019-08-20T10:36:46+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001321s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[2019-08-20T10:36:50+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000646s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000240s ]
+---------------------------------------------------------------
+[2019-08-20T10:36:55+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001184s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.001465s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.001148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[2019-08-20T10:36:56+08:00] 127.0.0.1 GET 0.0.0.0:8000/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000691s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] select version() as ver [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[2019-08-20T10:38:30+08:00] 127.0.0.1 GET 0.0.0.0:8000/service/config/index.html?spm=m-37-40-38
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000600s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000645s ]
+---------------------------------------------------------------
+[2019-08-20T10:38:33+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000625s ] mysql:host=127.0.0.1;port=3306;dbname=admin_v5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_fans` [ RunTime:0.004629s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-03-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-04-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-05-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-06-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-07-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT count(1) count,is_black black FROM `wechat_fans` WHERE  `subscribe_at` < '2019-08-32 00:00:00' GROUP BY `is_black` [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 0 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_fans` WHERE  `is_black` = 1 [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_news` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_news` WHERE  `is_deleted` = 0 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wechat_keys` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wechat_keys` [ RunTime:0.000238s ]

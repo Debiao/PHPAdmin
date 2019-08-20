@@ -1,0 +1,239 @@
+{extend name="admin@main"}
+
+{block name="content"}
+<form onsubmit="return false;" data-auto="true" method="post" class='layui-form layui-card' autocomplete="off" lay-filter="m_build">
+
+    <label class="layui-form-label">打包类型<br><span class="nowrap color-desc"></span></label>
+    <div class="layui-input-block">
+        {foreach ['appstore'=>'appstore','ad hoc'=>'ad hoc'] as $k=>$v}
+        <input type="radio" data-pem-type="{$k}" name="build_type" value="{$k}" title="{$v}" lay-filter="data-mch-type">
+        {/foreach}
+        <p class="help-block">请选择打包类型，appstore 和 ad hoc 二选一！</p>
+    </div>
+
+    <div class="layui-card-body">
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">版本号</label>
+            <div class="layui-input-inline">
+                <select class="layui-select" name="version">
+                    {foreach ['0'=>'V8'] as $k=>$v}
+                    {eq name='Think.get.status' value='$k.""'}
+                    <option selected value="{$k}">{$v}</option>
+                    {else}
+                    <option value="{$k}">{$v}</option>
+                    {/eq}
+                    {/foreach}
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">项目</label>
+            <div class="layui-input-inline">
+                <select class="layui-select" name="p_name">
+                    {foreach ['0'=>'401-dingdingmao_m','1'=>'400-leju_m'] as $k=>$v}
+                    {eq name='Think.get.status' value='$k.""'}
+                    <option selected value="{$k}">{$v}</option>
+                    {else}
+                    <option value="{$k}">{$v}</option>
+                    {/eq}
+                    {/foreach}
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">项目名称<br><span class="nowrap color-desc"></span></label>
+            <div class="layui-input-block">
+                <input name="project_name" required placeholder="请输入项目名称（必填）" value="{:sysconf('project_name')}" class="layui-input">
+                <p class="help-block">打包人员定义的项目名称，作为查找项目索引之一。</p>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">项目编号<br><span class="nowrap color-desc"></span></label>
+            <div class="layui-input-block">
+                <input name="project_id" required placeholder="请输入项目编号（必填）" value="{:sysconf('project_id')}" class="layui-input">
+                <p class="help-block">对应公司项目编号，作为查找项目索引之一。</p>
+            </div>
+        </div>
+
+        <!--        <div class="layui-form-item">-->
+        <!--            <label class="layui-form-label">Git地址<br><span class="nowrap color-desc"></span></label>-->
+        <!--            <div class="layui-input-block">-->
+        <!--                <input name="git_address" required placeholder="请输入项目名称（必填）" value="{:sysconf('git_address')}" class="layui-input">-->
+        <!--                <p class="help-block">该项目的git地址（请使用http/s协议）。</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">包ID<br><span class="nowrap color-desc"></span></label>
+            <div class="layui-input-block">
+                <input name="bundle_id" required placeholder="请输入BUNDLEID（必填）" value="{:sysconf('bundle_id')}" class="layui-input">
+                <p class="help-block">项目Bundle indentifier。</p>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">描述文件名<br><span class="nowrap color-desc"></span></label>
+            <div class="layui-input-block">
+                <input name="specifier" required placeholder="请输入描述文件名（必填）" value="{:sysconf('specifier')}" class="layui-input">
+                <p class="help-block">描述文件名。</p>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">p12证书密码<br><span class="nowrap color-desc"></span></label>
+            <div class="layui-input-block">
+                <input name="p12_pwd" required placeholder="请输入p12证书密码（必填）" value="{:sysconf('p12_pwd')}" class="layui-input">
+                <p class="help-block">p12证书对应的密码。</p>
+            </div>
+        </div>
+
+        <!--        <div class="layui-form-item">-->
+        <!--            <label class="layui-form-label">工程Target<br><span class="nowrap color-desc"></span></label>-->
+        <!--            <div class="layui-input-block">-->
+        <!--                <input name="target" required placeholder="请输入工程Target（必填）" value="{:sysconf('target')}" class="layui-input">-->
+        <!--                <p class="help-block">工程Target，可以在终端cd进入工程根目录，输入'xcodebuild -list' 获取。</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <!--        <div class="layui-form-item">-->
+        <!--            <label class="layui-form-label">工程名称<br><span class="nowrap color-desc"></span></label>-->
+        <!--            <div class="layui-input-block">-->
+        <!--                <input name="name" placeholder="请输入工程名称（必填）" maxlength="32" required value="{:sysconf('name')}" class="layui-input">-->
+        <!--                <p class="help-block">项目的工程名称。</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <!--        <div class="layui-form-item">-->
+        <!--            <label class="layui-form-label">工程Scheme<br><span class="nowrap color-desc"></span></label>-->
+        <!--            <div class="layui-input-block">-->
+        <!--                <input name="scheme" placeholder="请输入工程Scheme（必填）" maxlength="32" required value="{:sysconf('scheme')}" class="layui-input">-->
+        <!--                <p class="help-block">项目的工程Scheme。</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <!--        <div class="layui-form-item">-->
+        <!--            <label class="layui-form-label">DEMO_APP_ID<br><span class="nowrap color-desc"></span></label>-->
+        <!--            <div class="layui-input-block">-->
+        <!--                <input name="demo_app_id" placeholder="请输入DEMO_APP_ID（必填）" maxlength="32" required value="{:sysconf('demo_app_id')}" class="layui-input">-->
+        <!--                <p class="help-block">DEMO_APP_ID。</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <!--        <div class="layui-form-item">-->
+        <!--            <label class="layui-form-label">SDK_APP_ID<br><span class="nowrap color-desc"></span></label>-->
+        <!--            <div class="layui-input-block">-->
+        <!--                <input name="sdk_app_id" placeholder="请输入SDK_APP_ID（必填）" maxlength="32" required value="{:sysconf('sdk_app_id')}" class="layui-input">-->
+        <!--                <p class="help-block">SDK_APP_ID。</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <!--        <div class="layui-form-item">-->
+        <!--            <label class="layui-form-label">SDK_MAINURL<br><span class="nowrap color-desc"></span></label>-->
+        <!--            <div class="layui-input-block">-->
+        <!--                <input name="sdk_mainurl" placeholder="请输入SDK_MAINURL（必填）" maxlength="32" required value="{:sysconf('sdk_mainurl')}" class="layui-input">-->
+        <!--                <p class="help-block">SDK_MAINURL。</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <!--        <div class="layui-form-item">-->
+        <!--            <label class="layui-form-label">PUBLIC_KEY<br><span class="nowrap color-desc"></span></label>-->
+        <!--            <div class="layui-input-block">-->
+        <!--                <input name="public_key" placeholder="请输入PUBLIC_KEY（必填）" maxlength="32" required value="{:sysconf('public_key')}" class="layui-input">-->
+        <!--                <p class="help-block">PUBLIC_KEY。</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <!--        <div class="layui-form-item">-->
+        <!--            <label class="layui-form-label">PL_CHANNLE<br><span class="nowrap color-desc"></span></label>-->
+        <!--            <div class="layui-input-block">-->
+        <!--                <input name="pl_channle" placeholder="请输入PL_CHANNLE（必填）" maxlength="32" required value="{:sysconf('pl_channle')}" class="layui-input">-->
+        <!--                <p class="help-block">PL_CHANNLE。</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+
+
+        <!--        <label class="layui-form-label">编译类型<br><span class="nowrap color-desc"></span></label>-->
+        <!--        <div class="layui-input-block">-->
+        <!--            {foreach ['xcodeproj'=>'xcodeproj','xcworkspace'=>'xcworkspace'] as $k=>$v}-->
+        <!--            <input type="radio" data-pem-type="{$k}" name="wechat_mch_ssl_type" value="{$k}" title="{$v}" lay-filter="data-mch-type">-->
+        <!--            {/foreach}-->
+        <!--            <p class="help-block">请选择编译类型，xcodeproj 和 xcworkspace 二选一！</p>-->
+        <!--        </div>-->
+
+        <!--        <div class="hr-line-dashed"></div>-->
+
+
+        <!--        &lt;!&ndash; eigo 这里之前是上传证书-->
+        <div class="layui-form-item">
+            <label class="layui-form-label">相关证书<br><span class="nowrap color-desc"></span></label>
+            <div class="layui-input-block">
+                {foreach ['pem'=>'点击上传'] as $k=>$v}
+                <input type="radio" data-pem-type="{$k}" name="wechat_mch_ssl_type" value="{$k}" title="{$v}" lay-filter="data-mch-type">
+                {/foreach}
+                <p class="help-block">请上传证书，P12 和 mobileprovision！</p>
+                <div data-mch-type="p12" class="layui-tab-item padding-top-15 padding-bottom-15">
+                    <input name="wechat_mch_ssl_p12" value="{$wechat_mch_ssl_p12|default=''}" type="hidden">
+                    <!--                    <button data-file="btn" data-uptype="local" data-safe="true" data-type="p12" data-field="wechat_mch_ssl_p12" type="button" class="layui-btn layui-btn-primary">-->
+                    <!--                        <i class="layui-icon layui-icon-vercode font-s14"></i> 上传 P12 证书-->
+                    <!--                    </button>-->
+                    <p class="help-block margin-top-10"></p>
+                </div>
+                <div data-mch-type="pem" class="layui-tab-item padding-top-15 padding-bottom-15">
+                    <input name="wechat_mch_ssl_key" value="{$wechat_mch_ssl_key|default=''}" type="hidden">
+                    <button data-file="btn" data-uptype="local" data-safe="true" data-type="p12" data-field="wechat_mch_ssl_key" type="button" class="layui-btn layui-btn-primary margin-right-5">
+                        <i class="layui-icon layui-icon-vercode font-s14"></i> 上传 p12 证书
+                    </button>
+                    <input name="wechat_mch_ssl_cer" value="{$wechat_mch_ssl_cer|default=''}" type="hidden">
+                    <button data-file="btn" data-uptype="local" data-safe="true" data-type="mobileprovision" data-field="wechat_mch_ssl_cer" type="button" class="layui-btn layui-btn-primary">
+                        <i class="layui-icon layui-icon-vercode font-s14"></i> 上传 cer 证书
+                    </button>
+                    <p class="help-block margin-top-10">.p12：使设备不需要在苹果开发者网站重新申请开发和发布证书，就能使用；mobileprovision证书：.mobileprovision文件格式的配置文件是让开发者的项目（APP）能有真机调试，发布的权限。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hr-line-dashed"></div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block text-center" style="max-width:300px">
+                <button class="layui-btn" type="submit">开始打包</button>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+{/block}
+
+{block name="script"}
+<script>
+    (function () {
+        form.render();
+        this.type = "{:sysconf('wechat_mch_ssl_type')}" || 'p12';
+        form.val('payment', {wechat_mch_ssl_type: this.type});
+        form.on('radio(data-mch-type)', function (data) {
+            apply(data.value);
+        });
+        apply.call(this, this.type);
+
+        function apply(type) {
+            $('[data-mch-type="' + type + '"]').show().siblings('[data-mch-type]').hide();
+        };
+        // 证书文件上传控制
+        this.types = ['wechat_mch_ssl_p12', 'wechat_mch_ssl_key', 'wechat_mch_ssl_cer'];
+        for (var i in this.types) $('input[name="' + this.types[i] + '"]').on('change', function () {
+            var input = this, $button = $(this).next('button');
+            setTimeout(function () {
+                if (typeof input.value === 'string' && input.value.length > 5) {
+                    $button.find('i').addClass('color-green layui-icon-vercode').removeClass('layui-icon-upload-drag');
+                } else {
+                    $button.find('i').removeClass('color-green layui-icon-vercode').addClass('layui-icon-upload-drag');
+                }
+            }, 300);
+        }).trigger('change');
+    })({});
+</script>
+{/block}
