@@ -1,0 +1,3 @@
+---------------------------------------------------------------
+[2019-08-14T11:01:31+08:00] 127.0.0.1 GET 127.0.0.1:8000/admin/login.html
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Users/sundebiao/Desktop/ThinkAdmin-5/thinkphp/library/think/db/Connection.php:528]
