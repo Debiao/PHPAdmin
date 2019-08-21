@@ -563,7 +563,7 @@ INSERT INTO `system_menu` VALUES (14, 48, '商品信息管理', '', 'layui-icon 
 INSERT INTO `system_menu` VALUES (16, 0, '微信管理', '', '', '#', '', '_self', 300, 1, '2018-10-31 15:15:27');
 INSERT INTO `system_menu` VALUES (17, 16, '微信管理', '', '', '#', '', '_self', 20, 1, '2018-10-31 15:16:46');
 INSERT INTO `system_menu` VALUES (18, 17, '微信授权配置', '', 'layui-icon layui-icon-set', 'wechat/config/options', '', '_self', 2, 1, '2018-10-31 15:17:11');
-INSERT INTO `system_menu` VALUES (19, 17, '微信支付配置', '', 'layui-icon layui-icon-rmb', 'wechat/config/payment', '', '_self', 1, 1, '2018-10-31 18:28:09');
+INSERT INTO `system_menu` VALUES (19, 17, '22222222222', '', 'layui-icon layui-icon-rmb', 'wechat/config/payment', '', '_self', 1, 1, '2018-10-31 18:28:09');
 INSERT INTO `system_menu` VALUES (20, 16, '微信定制', '', '', '#', '', '_self', 10, 1, '2018-11-13 11:46:27');
 INSERT INTO `system_menu` VALUES (21, 20, '图文素材管理', '', 'layui-icon layui-icon-template', 'wechat/news/index', '', '_self', 6, 1, '2018-11-13 11:46:55');
 INSERT INTO `system_menu` VALUES (22, 20, '粉丝信息管理', '', 'layui-icon layui-icon-user', 'wechat/fans/index', '', '_self', 5, 1, '2018-11-15 09:51:13');

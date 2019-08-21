@@ -67,7 +67,7 @@ class Keys extends Controller
             }
         }
         // 关键字列表显示
-        $this->title = '回复规则管理';
+        $this->title = '555555555555';
         $query = $this->_query($this->table)->like('keys,type')->equal('status')->dateBetween('create_at');
         $query->whereNotIn('keys', ['subscribe', 'default'])->order('sort desc,id desc')->page();
     }
@@ -143,7 +143,7 @@ class Keys extends Controller
     public function subscribe()
     {
         $this->applyCsrfToken();
-        $this->title = '编辑关注回复规则';
+        $this->title = '6666666666666666666666';
         $this->_form($this->table, 'form', 'keys', [], ['keys' => 'subscribe']);
     }
 

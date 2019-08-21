@@ -24,7 +24,7 @@ class Config extends Controller
      * 打包结果存放路径
      * @var string
      */
-    protected $build_res_url = '/Users/xueyangcan/dev/buildres';
+    protected $build_res_url = '/Users/sundebiao/Desktop/ipa';
 
     /**
      * SDK免签打包配置
@@ -32,73 +32,73 @@ class Config extends Controller
      * @throws \think\Exception
      * @throws \think\exception\PDOException
      */
-    public function m_build()
-    {
-        $this->applyCsrfToken();
-        $this->_clear_build_cache();
-        $this->title = 'SDK免签打包配置';
-        if ($this->request->isGet()) {
-            $file = File::instance('local');
-            return $this->fetch();
-        }
-//        $git = $this->request->post('git_address');
-        // 取出证书
-        $p12 = '/Users/xueyangcan/dev/cer/cer.p12';
-        $mobileprovision = '/Users/xueyangcan/dev/cer/eigo.mobileprovision';
-        if($this->request->post('wechat_mch_ssl_key')){
-            $p12 = env('root_path').'safefile/'.$this->request->post('wechat_mch_ssl_key');
-        }
-        if($this->request->post('wechat_mch_ssl_cer')){
-            $mobileprovision = env('root_path').'safefile/'.$this->request->post('wechat_mch_ssl_cer');
-        }
-        // 其他参数
-        $version = $this->request->post("version");
-        $p_name  = $this->request->post("p_name");
-        // 0=>381-shabake 1=>401-dingdingmao
-        switch ($p_name) {
-            case 0:
-                $p_name = '401-dingdingmao_m';
-                break;
-            case 1:
-                $p_name = '400-leju_m';
-                break;
-            default:
-                break;
-        }
-        $build_type = $this->request->post("build_type") ? $this->request->post("build_type") : 2;
-        $build_type = ($build_type == 'ad hoc') ? 2 : 1;
-        $bundle_id  = $this->request->post("bundle_id");
-        $specifier  = $this->request->post("specifier");
-        $p12_pwd    = $this->request->post("p12_pwd");
-        $data       = [
-            'project_name' => $this->request->post("project_name"),
-            'project_id'   => $this->request->post("project_id"),
-            'version'      => $version,
-            'custom_name'  => $p_name,
-            'build_type'   => $build_type,
-            'bundle_id'    => $bundle_id,
-            'specifier'    => $specifier,
-            'p12_pwd'      => $p12_pwd,
-            'status'       => 0,
-            'type'         => 2,
-        ];
-
-        // 拉取分支代码
-        exec('cd /Users/xueyangcan/dev/pro/sdkbuild/huosdk_v8_ios; git pull', $git_res, $git_op);
-        if ($git_res) {
-            // 运行脚本
-            exec('cd /Users/xueyangcan/dev/pro/sdkbuild/huosdk_v8_ios/sdk/iosm/huosdkProject; ./shell.sh ' . $p_name . ' ' . $build_type . ' ' . $bundle_id . ' ' . $specifier . ' ' . $mobileprovision . ' ' . $p12 . ' ' . $p12_pwd, $retArr, $output);
-            if ($retArr) {
-                // 入库
-                if($this->_check_build_res()==1) $data['status'] = 1;
-                if (!empty($data)) Db::name('SdkBuild')->insert($data);
-                // 写入日志
-                file_put_contents('/Users/xueyangcan/dev/ThinkAdmin/log/build/log.log', implode('', $retArr));
-                // 结束脚本，此时可回调
-                $this->success('打包结束！','admin.html#/wechat/fans/index.html?spm=m-16-17-18');
-            }
-        }
-    }
+//    public function m_build()
+//    {
+//        $this->applyCsrfToken();
+//        $this->_clear_build_cache();
+//        $this->title = 'SDK免签打包配置';
+//        if ($this->request->isGet()) {
+//            $file = File::instance('local');
+//            return $this->fetch();
+//        }
+////        $git = $this->request->post('git_address');
+//        // 取出证书
+//        $p12 = '/Users/xueyangcan/dev/cer/cer.p12';
+//        $mobileprovision = '/Users/xueyangcan/dev/cer/eigo.mobileprovision';
+//        if($this->request->post('wechat_mch_ssl_key')){
+//            $p12 = env('root_path').'safefile/'.$this->request->post('wechat_mch_ssl_key');
+//        }
+//        if($this->request->post('wechat_mch_ssl_cer')){
+//            $mobileprovision = env('root_path').'safefile/'.$this->request->post('wechat_mch_ssl_cer');
+//        }
+//        // 其他参数
+//        $version = $this->request->post("version");
+//        $p_name  = $this->request->post("p_name");
+//        // 0=>381-shabake 1=>401-dingdingmao
+//        switch ($p_name) {
+//            case 0:
+//                $p_name = '401-dingdingmao_m';
+//                break;
+//            case 1:
+//                $p_name = '400-leju_m';
+//                break;
+//            default:
+//                break;
+//        }
+//        $build_type = $this->request->post("build_type") ? $this->request->post("build_type") : 2;
+//        $build_type = ($build_type == 'ad hoc') ? 2 : 1;
+//        $bundle_id  = $this->request->post("bundle_id");
+//        $specifier  = $this->request->post("specifier");
+//        $p12_pwd    = $this->request->post("p12_pwd");
+//        $data       = [
+//            'project_name' => $this->request->post("project_name"),
+//            'project_id'   => $this->request->post("project_id"),
+//            'version'      => $version,
+//            'custom_name'  => $p_name,
+//            'build_type'   => $build_type,
+//            'bundle_id'    => $bundle_id,
+//            'specifier'    => $specifier,
+//            'p12_pwd'      => $p12_pwd,
+//            'status'       => 0,
+//            'type'         => 2,
+//        ];
+//
+//        // 拉取分支代码
+//        exec('cd /Users/xueyangcan/dev/pro/sdkbuild/huosdk_v8_ios; git pull', $git_res, $git_op);
+//        if ($git_res) {
+//            // 运行脚本
+//            exec('cd /Users/xueyangcan/dev/pro/sdkbuild/huosdk_v8_ios/sdk/iosm/huosdkProject; ./shell.sh ' . $p_name . ' ' . $build_type . ' ' . $bundle_id . ' ' . $specifier . ' ' . $mobileprovision . ' ' . $p12 . ' ' . $p12_pwd, $retArr, $output);
+//            if ($retArr) {
+//                // 入库
+//                if($this->_check_build_res()==1) $data['status'] = 1;
+//                if (!empty($data)) Db::name('SdkBuild')->insert($data);
+//                // 写入日志
+//                file_put_contents('/Users/xueyangcan/dev/ThinkAdmin/log/build/log.log', implode('', $retArr));
+//                // 结束脚本，此时可回调
+//                $this->success('打包结束！','admin.html#/wechat/fans/index.html?spm=m-16-17-18');
+//            }
+//        }
+//    }
 
     /**
      * SDK切换打包配置
@@ -106,76 +106,79 @@ class Config extends Controller
      * @throws \think\Exception
      * @throws \think\exception\PDOException
      */
-    public function payment()
-    {
-        $this->applyCsrfToken();
-        $this->_clear_build_cache();
-        $this->title = 'SDK切换打包配置';
-        if ($this->request->isGet()) {
-            $file = File::instance('local');
-            return $this->fetch();
-        }
-//        $git = $this->request->post('git_address');
-        // 取出证书
-        $p12 = '/Users/xueyangcan/dev/cer/cer.p12';
-        $mobileprovision = '/Users/xueyangcan/dev/cer/eigo.mobileprovision';
-        if($this->request->post('wechat_mch_ssl_key')){
-            $p12 = env('root_path').'safefile/'.$this->request->post('wechat_mch_ssl_key');
-        }
-        if($this->request->post('wechat_mch_ssl_cer')){
-            $mobileprovision = env('root_path').'safefile/'.$this->request->post('wechat_mch_ssl_cer');
-        }
-        // 其他参数
-        $version = $this->request->post("version");
-        $p_name  = $this->request->post("p_name");
-        // 0=>381-shabake 1=>401-dingdingmao
-        switch ($p_name) {
-            case 0:
-                $p_name = '381-shabake';
-                break;
-            case 1:
-                $p_name = '401-dingdingmao';
-                break;
-            default:
-                break;
-        }
-        $build_type = $this->request->post("build_type") ? $this->request->post("build_type") : 2;
-        $build_type = ($build_type == 'ad hoc') ? 2 : 1;
-        $bundle_id  = $this->request->post("bundle_id");
-        $specifier  = $this->request->post("specifier");
-        $p12_pwd    = $this->request->post("p12_pwd");
-        $data       = [
-            'project_name' => $this->request->post("project_name"),
-            'project_id'   => $this->request->post("project_id"),
-            'version'      => $version,
-            'custom_name'  => $p_name,
-            'build_type'   => $build_type,
-            'bundle_id'    => $bundle_id,
-            'specifier'    => $specifier,
-            'p12_pwd'      => $p12_pwd,
-            'status'       => 0,
-            'type'         => 1,
-        ];
 
-        // 拉取分支代码
-        exec('cd /Users/xueyangcan/dev/pro/sdkbuild/huosdk_v8_ios; git pull', $git_res, $git_op);
-        if ($git_res) {
-            // 运行脚本
-            exec('cd /Users/xueyangcan/dev/pro/sdkbuild/huosdk_v8_ios/sdk/iosq/sdk; ./shell.sh ' . $p_name . ' ' . $build_type . ' ' . $bundle_id . ' ' . $specifier . ' ' . $mobileprovision . ' ' . $p12 . ' ' . $p12_pwd, $retArr, $output);
-            if ($retArr) {
-                // 入库
-                if($this->_check_build_res()==1) $data['status'] = 1;
-                if (!empty($data)) Db::name('SdkBuild')->insert($data);
-                // 写入日志
-                file_put_contents('/Users/xueyangcan/dev/ThinkAdmin/log/build/log.log', implode('', $retArr));
-                // 结束脚本，此时可回调
-                $this->success('打包结束！','admin.html#/wechat/fans/index.html?spm=m-16-17-18');
-            }
-        }
-    }
+//    public function payment()
+//    {
+//        $this->applyCsrfToken();
+//        $this->_clear_build_cache();
+//        $this->title = 'SDK切换打包配置';
+//        if ($this->request->isGet()) {
+//            $file = File::instance('local');
+//            return $this->fetch();
+//        }
+////        $git = $this->request->post('git_address');
+//        // 取出证书
+//        $p12 = '/Users/xueyangcan/dev/cer/cer.p12';
+//        $mobileprovision = '/Users/xueyangcan/dev/cer/eigo.mobileprovision';
+//        if($this->request->post('wechat_mch_ssl_key')){
+//            $p12 = env('root_path').'safefile/'.$this->request->post('wechat_mch_ssl_key');
+//        }
+//        if($this->request->post('wechat_mch_ssl_cer')){
+//            $mobileprovision = env('root_path').'safefile/'.$this->request->post('wechat_mch_ssl_cer');
+//        }
+//        // 其他参数
+//        $version = $this->request->post("version");
+//        $p_name  = $this->request->post("p_name");
+//        // 0=>381-shabake 1=>401-dingdingmao
+//        switch ($p_name) {
+//            case 0:
+//                $p_name = '381-shabake';
+//                break;
+//            case 1:
+//                $p_name = '401-dingdingmao';
+//                break;
+//            default:
+//                break;
+//        }
+//        $build_type = $this->request->post("build_type") ? $this->request->post("build_type") : 2;
+//        $build_type = ($build_type == 'ad hoc') ? 2 : 1;
+//        $bundle_id  = $this->request->post("bundle_id");
+//        $specifier  = $this->request->post("specifier");
+//        $p12_pwd    = $this->request->post("p12_pwd");
+//        $data       = [
+//            'project_name' => $this->request->post("project_name"),
+//            'project_id'   => $this->request->post("project_id"),
+//            'version'      => $version,
+//            'custom_name'  => $p_name,
+//            'build_type'   => $build_type,
+//            'bundle_id'    => $bundle_id,
+//            'specifier'    => $specifier,
+//            'p12_pwd'      => $p12_pwd,
+//            'status'       => 0,
+//            'type'         => 1,
+//        ];
+//
+//        // 拉取分支代码
+//        exec('cd /Users/xueyangcan/dev/pro/sdkbuild/huosdk_v8_ios; git pull', $git_res, $git_op);
+//        if ($git_res) {
+//            // 运行脚本
+//            exec('cd /Users/xueyangcan/dev/pro/sdkbuild/huosdk_v8_ios/sdk/iosq/sdk; ./shell.sh ' . $p_name . ' ' . $build_type . ' ' . $bundle_id . ' ' . $specifier . ' ' . $mobileprovision . ' ' . $p12 . ' ' . $p12_pwd, $retArr, $output);
+//            if ($retArr) {
+//                // 入库
+//                if($this->_check_build_res()==1) $data['status'] = 1;
+//                if (!empty($data)) Db::name('SdkBuild')->insert($data);
+//                // 写入日志
+//                file_put_contents('/Users/xueyangcan/dev/ThinkAdmin/log/build/log.log', implode('', $retArr));
+//                // 结束脚本，此时可回调
+//                $this->success('打包结束！','admin.html#/wechat/fans/index.html?spm=m-16-17-18');
+//            }
+//        }
+//    }
+
+
 
     /**
-     * 普通打包配置(目前git在eigo_dev分支，可切换v8沙巴克、圣灵科技、v8、有玩等多个环境)
+     * 普通打包配置(目前svn有500out,bdcf)
      * @return mixed
      * @throws \think\Exception
      * @throws \think\exception\PDOException

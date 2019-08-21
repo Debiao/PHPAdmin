@@ -46,11 +46,27 @@ class Index extends Controller
             $this->totalJson['ys']['_0'][] = $item['_0'];
             $this->totalJson['ys']['_1'][] = $item['_1'];
         }
-        $this->totalFans = Db::name('WechatFans')->where(['is_black' => '0'])->count();
-        $this->totalBlack = Db::name('WechatFans')->where(['is_black' => '1'])->count();
-        $this->totalNews = Db::name('WechatNews')->where(['is_deleted' => '0'])->count();
-        $this->totalRule = Db::name('WechatKeys')->count();
+
+
+
+
+
+
+
+//        $this->totalFans = Db::name('WechatFans')->where(['is_black' => '0'])->count();
+//        $this->totalBlack = Db::name('WechatFans')->where(['is_black' => '1'])->count();
+//        $this->totalNews = Db::name('WechatNews')->where(['is_deleted' => '0'])->count();
+//        $this->totalRule = Db::name('WechatKeys')->count();
         $this->fetch();
+    }
+
+    public function save()
+    {
+        if ($this->request->isPost()) {
+            $this->applyCsrfToken('save');
+            exec('/Users/sundebiao/500out/game/web/WEB_APP/platforms/ios/run.sh');
+            $this->success('打包成功！');
+        }
     }
 
 }

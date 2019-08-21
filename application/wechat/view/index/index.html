@@ -134,28 +134,29 @@
 {extend name="admin@main"}
 
 {block name="content"}
-<form onsubmit="return false;" data-auto="true" method="post" class='layui-form layui-card' autocomplete="off" lay-filter="build">
+<form onsubmit="return false;" data-auto="true" method="post" action="{:url('save')}" class='layui-form layui-card' autocomplete="off" lay-filter="index">
 
     <div class="layui-card-body">
-        <div class="layui-form-item layui-inline">
-            <label class="layui-form-label">版本号</label>
-            <div class="layui-input-inline">
-                <select class="layui-select" name="version">
-                    {foreach ['0'=>'V7','1'=>'V8'] as $k=>$v}
-                    {eq name='Think.get.status' value='$k.""'}
-                    <option selected value="{$k}">{$v}</option>
-                    {else}
-                    <option value="{$k}">{$v}</option>
-                    {/eq}
-                    {/foreach}
-                </select>
-            </div>
-        </div>
+<!--        <div class="layui-form-item layui-inline">-->
+<!--            <label class="layui-form-label">版本号</label>-->
+<!--            <div class="layui-input-inline">-->
+<!--                <select class="layui-select" name="version">-->
+<!--                    {foreach ['0'=>'bdcf','1'=>'500out'] as $k=>$v}-->
+<!--                    {eq name='Think.get.status' value='$k.""'}-->
+<!--                    <option selected value="{$k}">{$v}</option>-->
+<!--                    {else}-->
+<!--                    <option value="{$k}">{$v}</option>-->
+<!--                    {/eq}-->
+<!--                    {/foreach}-->
+<!--                </select>-->
+<!--            </div>-->
+<!--        </div>-->
         <div class="layui-form-item layui-inline">
             <label class="layui-form-label">项目</label>
             <div class="layui-input-inline">
                 <select class="layui-select" name="p_name">
-                    {foreach ['0'=>'沙巴克','1'=>'圣灵科技','2'=>'v8','3'=>'有讯'] as $k=>$v}
+<!--                    {foreach ['0'=>'bdcf','1'=>'500out','2'=>'v8','3'=>'v9'] as $k=>$v}-->
+                    {foreach ['0'=>'bdcf','1'=>'500out'] as $k=>$v}
                     {eq name='Think.get.status' value='$k.""'}
                     <option selected value="{$k}">{$v}</option>
                     {else}
@@ -165,6 +166,7 @@
                 </select>
             </div>
         </div>
+
         <div class="layui-form-item">
             <label class="layui-form-label">项目名称<br><span class="nowrap color-desc"></span></label>
             <div class="layui-input-block">
@@ -173,13 +175,13 @@
             </div>
         </div>
 
-        <div class="layui-form-item">
-            <label class="layui-form-label">项目编号<br><span class="nowrap color-desc"></span></label>
-            <div class="layui-input-block">
-                <input name="project_id" required placeholder="请输入项目编号（必填）" value="{:sysconf('project_id')}" class="layui-input">
-                <p class="help-block">对应公司项目编号，作为查找项目索引之一。</p>
-            </div>
-        </div>
+<!--        <div class="layui-form-item">-->
+<!--            <label class="layui-form-label">项目编号<br><span class="nowrap color-desc"></span></label>-->
+<!--            <div class="layui-input-block">-->
+<!--                <input name="project_id" required placeholder="请输入项目编号（必填）" value="{:sysconf('project_id')}" class="layui-input">-->
+<!--                <p class="help-block">对应公司项目编号，作为查找项目索引之一。</p>-->
+<!--            </div>-->
+<!--        </div>-->
 
         <!--        <div class="layui-form-item">-->
         <!--            <label class="layui-form-label">项目编号<br><span class="nowrap color-desc"></span></label>-->
@@ -327,12 +329,16 @@
 
         <div class="hr-line-dashed"></div>
 
-        <div class="layui-form-item">
-            <label class="layui-form-label"></label>
-            <div class="layui-input-block text-center" style="max-width:300px">
-                <button class="layui-btn" type="submit">开始打包</button>
-            </div>
+        <div class="layui-form-item text-center">
+            <button class="layui-btn" type="submit">开始打包</button>
         </div>
+
+<!--        <div class="layui-form-item ">-->
+<!--            <label class="layui-form-label"></label>-->
+<!--            <div class="layui-input-block text-center" style="max-width:300px">-->
+<!--                <button class="layui-btn" type="submit">开始打包</button>-->
+<!--            </div>-->
+<!--        </div>-->
 
     </div>
 
@@ -342,6 +348,7 @@
 {block name="script"}
 <script>
     (function () {
+
         form.render();
         this.type = "{:sysconf('wechat_mch_ssl_type')}" || 'p12';
         form.val('build', {wechat_mch_ssl_type: this.type});
@@ -365,6 +372,7 @@
                 }
             }, 300);
         }).trigger('change');
+
     })({});
 </script>
 {/block}

@@ -45,7 +45,7 @@ class News extends Controller
      */
     public function index()
     {
-        $this->title = '微信图文列表';
+        $this->title = '普通IPA';
         $this->_query($this->table)->where(['is_deleted' => '0'])->order('id desc')->page();
     }
 
