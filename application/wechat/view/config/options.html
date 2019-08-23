@@ -1,44 +1,77 @@
 {extend name="admin@main"}
-
-{block name="content"}
-
-<!--<div>-->
-<!--    <div class="layui-card layui-form">-->
-<!--        <div class="layui-card-body think-box-shadow padding-bottom-5">-->
-<!--            <div class="layui-form-item margin-bottom-0">-->
-<!--                <label class="layui-form-label">Auth<br><span class="nowrap color-desc">授权方式</span></label>-->
-<!--                <div class="layui-input-block">-->
-<!--                    {foreach ['api'=>'公众号平台API模式','thr'=>'第三方平台授权模式','test'=>'接口功能测试'] as $k=>$v}-->
-<!--                    <input type="radio" data-wechat-type="{$k}" name="wechat_type" value="{$k}" title="{$v}" lay-filter="wechat_type">-->
-<!--                    {/foreach}-->
-<!--                    <p class="help-block">请选择微信对接方式，其中第三方平台授权需要微信开放平台支持，同时需要搭建 SERVICE 服务！</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="think-box-shadow ">-->
-<!--        <div class="layui-anim layui-anim-upbit" data-type="api">{include file='config/options_api'}</div>-->
-<!--        <div class="layui-anim layui-anim-upbit" data-type="thr">{include file='config/options_thr'}</div>-->
-<!--        <div class="layui-anim layui-anim-upbit" data-type="test">{include file='config/options_help'}</div>-->
-<!--    </div>-->
-<!--</div>-->
-
+{block name="style"}
+<div class="layui-card-header layui-anim layui-anim-fadein notselect"><span
+        class="layui-icon layui-icon-next font-s10 color-desc margin-right-5"></span>项目构建
+    <div class="pull-right">
+        <button data-action="/wechat/fans/setblack.html" data-rule="openid#{key}" data-csrf="5d5e4b52e9c34"
+                class="layui-btn layui-btn-sm layui-btn-primary">迭代更新
+        </button>
+    </div>
+</div>
 {/block}
 
-{block name='script'}
+{block name="content"}
+<form onsubmit="return false;" data-auto="true" method="post" action="{:url('save')}" class='layui-form layui-card'
+      autocomplete="off" lay-filter="index">
+    <div class="layui-card-body">
+
+        <div class="layui-form-item layui-inline">
+            <label class="layui-form-label">项目名称<span style="color: red;"> * </span></label>
+            <div class="layui-input-inline" style="width: auto">
+                <select class="layui-select" name="p_name">
+                    <!--                    {foreach ['0'=>'bdcf','1'=>'500out','2'=>'v8','3'=>'v9'] as $k=>$v}-->
+                    {foreach ['0'=>'bdcf','1'=>'500out'] as $k=>$v}
+                    {eq name='Think.get.status' value='$k.""'}
+                    <option selected value="{$k}">{$v}</option>
+                    {else}
+                    <option value="{$k}">{$v}</option>
+                    {/eq}
+                    {/foreach}
+                </select>
+                <p>打包人员选择项目名称，作为打包项目。</p>
+            </div>
+
+
+        </div>
+
+        <div class="hr-line-dashed"></div>
+
+        <div class="layui-form-item text-center">
+            <button class="layui-btn" type="submit">开始打包</button>
+        </div>
+
+    </div>
+</form>
+{/block}
+
+{block name="script"}
 <script>
-    $(function () {
-        apply('{:sysconf("wechat_type")}');
-        window.form.render();
-        window.form.on('radio(wechat_type)', function (data) {
+    (function () {
+
+        form.render();
+        this.type = "{:sysconf('wechat_mch_ssl_type')}" || 'p12';
+        form.val('build', {wechat_mch_ssl_type: this.type});
+        form.on('radio(data-mch-type)', function (data) {
             apply(data.value);
         });
+        apply.call(this, this.type);
 
-        function apply(value) {
-            this.$active = $("[data-wechat-type='" + value + "']").trigger('click');
-            if (this.$active.size() < 1) $("[data-wechat-type]:first").trigger('click');
-            $('[data-type="' + value + '"]').show().siblings('[data-type]').hide();
-        }
-    });
+        function apply(type) {
+            $('[data-mch-type="' + type + '"]').show().siblings('[data-mch-type]').hide();
+        };
+        // 证书文件上传控制
+        this.types = ['wechat_mch_ssl_p12', 'wechat_mch_ssl_key', 'wechat_mch_ssl_cer'];
+        for (var i in this.types) $('input[name="' + this.types[i] + '"]').on('change', function () {
+            var input = this, $button = $(this).next('button');
+            setTimeout(function () {
+                if (typeof input.value === 'string' && input.value.length > 5) {
+                    $button.find('i').addClass('color-green layui-icon-vercode').removeClass('layui-icon-upload-drag');
+                } else {
+                    $button.find('i').removeClass('color-green layui-icon-vercode').addClass('layui-icon-upload-drag');
+                }
+            }, 300);
+        }).trigger('change');
+
+    })({});
 </script>
 {/block}

@@ -39,7 +39,7 @@ class Index extends Controller
      */
     public function index()
     {
-        $this->title = '系统管理后台';
+        $this->title = '小白兔';
         NodeService::applyUserAuth(true);
         $this->menus = NodeService::getMenuNodeTree();
         if (empty($this->menus) && !NodeService::islogin()) {

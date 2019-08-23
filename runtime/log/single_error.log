@@ -229,3 +229,24 @@
 ---------------------------------------------------------------
 [2019-08-21T15:31:59+08:00] 127.0.0.1 GET 0.0.0.0:8000/wechat/index/index.html?spm=m-16-17-55
 [ error ] [0]致命错误: Class 'app\wechat\controller\File' not found[/Users/sundebiao/PHPAdmin/application/wechat/controller/Index.php:40]
+---------------------------------------------------------------
+[2019-08-22T09:30:20+08:00] 127.0.0.1 POST 0.0.0.0:8000/admin/auth/apply.html?spm=m-2-12-7
+[ error ] [64]Cannot declare class app\wechat\controller\Config, because the name is already in use[/Users/sundebiao/PHPAdmin/application/build/controller/config.php:306]
+---------------------------------------------------------------
+[2019-08-22T09:30:27+08:00] 127.0.0.1 POST 0.0.0.0:8000/admin/auth/apply.html?spm=m-2-12-7
+[ error ] [64]Cannot declare class app\wechat\controller\Config, because the name is already in use[/Users/sundebiao/PHPAdmin/application/build/controller/config.php:306]
+---------------------------------------------------------------
+[2019-08-22T10:06:04+08:00] 127.0.0.1 POST 0.0.0.0:8000/admin/auth/apply.html?spm=m-2-12-7
+[ error ] [64]Cannot declare class app\wechat\controller\Config, because the name is already in use[/Users/sundebiao/PHPAdmin/application/build/controller/config.php:306]
+---------------------------------------------------------------
+[2019-08-22T10:06:22+08:00] 127.0.0.1 POST 0.0.0.0:8000/admin/auth/apply.html?spm=m-2-12-7
+[ error ] [64]Cannot declare class app\wechat\controller\Config, because the name is already in use[/Users/sundebiao/PHPAdmin/application/build/controller/config.php:306]
+---------------------------------------------------------------
+[2019-08-22T10:06:26+08:00] 127.0.0.1 POST 0.0.0.0:8000/admin/auth/apply.html?spm=m-2-12-7
+[ error ] [64]Cannot declare class app\wechat\controller\Config, because the name is already in use[/Users/sundebiao/PHPAdmin/application/build/controller/config.php:306]
+---------------------------------------------------------------
+[2019-08-22T16:31:18+08:00] 116.22.44.114 POST 116.22.44.114:666/admin/auth/apply.html?spm=m-2-12-7
+[ error ] [64]Cannot declare class app\wechat\controller\Config, because the name is already in use[/Users/sundebiao/PHPAdmin/application/build/controller/config.php:306]
+---------------------------------------------------------------
+[2019-08-22T16:34:16+08:00] 116.22.44.114 POST 116.22.44.114:666/admin/auth/apply.html?spm=m-2-12-7
+[ error ] [64]Cannot declare class app\wechat\controller\Config, because the name is already in use[/Users/sundebiao/PHPAdmin/application/build/controller/config.php:306]
